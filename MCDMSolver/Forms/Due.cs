@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace MCDMSolver.Forms
 {
-    public partial class Loading : Form
+    public partial class Due : Form
     {
-        public Loading()
+        public Due()
         {
             InitializeComponent();
-            // Mamad Nobari
-        }
-
-        private void TableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
