@@ -17,60 +17,7 @@ namespace MCDMSolver.Forms
             InitializeComponent();
             customizeDesign();
         }
-        private void customizeDesign()
-        {
-            panelLoadSubmenu.Visible = false;
-            panelNewSubmenu.Visible = false;
 
-        }
-        private void hideSubMenu()
-        {
-            if(panelNewSubmenu.Visible == true)
-                panelNewSubmenu.Visible = false;
-            if (panelLoadSubmenu.Visible == true)
-                panelLoadSubmenu.Visible = false;
-        }
-        private void showSubMenu(Panel subMenu)
-        {
-            if (subMenu.Visible == false)
-            {
-                hideSubMenu();
-                subMenu.Visible = true;
-            }
-            else
-                subMenu.Visible = false;
-        }
-
-        private void BtnNew_Click(object sender, EventArgs e)
-        {
-            showSubMenu(panelNewSubmenu);
-        }
-
-        private void BtnTest1_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Forms.Due()); 
-            hideSubMenu();
-        }
-
-        private Form activeForm = null;
-        private void openChildForm(Form childForm)
-        {
-            if (activeForm != null)
-                activeForm.Close();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Add(childForm);
-            panelChildForm.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-        private void BtnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
         #region Move Window
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -89,5 +36,70 @@ namespace MCDMSolver.Forms
             }
         }
         #endregion
+
+        private void customizeDesign()
+        {
+            panelLoadSubmenu.Visible = false;
+            panelNewSubmenu.Visible = false;
+
+        }
+        /// <summary>
+        /// Hide SubMenu For Menu Buttons
+        /// </summary>
+        private void hideSubMenu()
+        {
+            if(panelNewSubmenu.Visible == true)
+                panelNewSubmenu.Visible = false;
+            if (panelLoadSubmenu.Visible == true)
+                panelLoadSubmenu.Visible = false;
+        }
+
+        private void showSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
+        }
+
+        private void BtnNew_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelNewSubmenu);
+        }
+
+        private void BtnTest1_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+            openChildForm(new Forms.newTemplateSuggestion());
+        }
+
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel200.Controls.Add(childForm);
+            panel200.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+        private void BtnDashboard_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Forms.Due());
+        }
     }
 }

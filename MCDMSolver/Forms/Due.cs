@@ -16,5 +16,23 @@ namespace MCDMSolver.Forms
         {
             InitializeComponent();
         }
+        
+        private void loadRecents()
+        {
+            for (int i = 0; i < 30; i++)
+            {
+                UserControls.userControlRecentlyProjects recentProjects = new UserControls.userControlRecentlyProjects();
+                recentProjects.Dock = DockStyle.Top;
+                recentProjects.projectName = "امیر";
+                recentProjects.projectDate = "امیر";
+                recentProjects.projectDetails = "امیر";
+                panelRecntProjects.Controls.Add(recentProjects);
+            }
+        }
+
+        private void Due_Load(object sender, EventArgs e)
+        {
+            loadRecents();
+        }
     }
 }

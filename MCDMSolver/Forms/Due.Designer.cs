@@ -34,6 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelRecntProjects = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -94,6 +95,7 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panelRecntProjects, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 175);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -115,6 +117,15 @@
             this.label1.Text = " اخیرا استفاده کرده اید";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // panelRecntProjects
+            // 
+            this.panelRecntProjects.AutoScroll = true;
+            this.panelRecntProjects.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelRecntProjects.Location = new System.Drawing.Point(3, 28);
+            this.panelRecntProjects.Name = "panelRecntProjects";
+            this.panelRecntProjects.Size = new System.Drawing.Size(1018, 562);
+            this.panelRecntProjects.TabIndex = 2;
+            // 
             // Due
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,6 +137,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Due";
             this.Text = "Due";
+            this.Load += new System.EventHandler(this.Due_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -141,5 +153,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelRecntProjects;
     }
 }
