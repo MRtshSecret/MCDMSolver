@@ -79,5 +79,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FileManager\Inprogress\" />
+    <Folder Include="FileManager\Saved\" />
+    <Folder Include="FileManager\Temp\" />
+    <Folder Include="Forms\" />
+    <Folder Include="Langs\" />
+    <Folder Include="Modules\" />
+    <Folder Include="Resource\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
