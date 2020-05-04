@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MCDMSolver
+namespace MCDMSolver.Forms
 {
-    public partial class Form1 : Form
+    public partial class Loading : Form
     {
-        public Form1()
+        public Loading()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            //SALAM
         }
     }
 }
