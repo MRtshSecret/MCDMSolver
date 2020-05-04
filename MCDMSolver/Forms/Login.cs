@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace MCDMSolver.Forms
 {
-    public partial class SignUp : Form
+    public partial class Login : Form
     {
-        public SignUp()
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void SignUp_Load(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
-            int x = (panelTop.Size.Width - labelSignUp.Size.Width) / 2;
-            labelSignUp.Location = new Point(x, labelSignUp.Location.Y);
+            int x = (panelTop.Size.Width - labelLogin.Size.Width) / 2;
+            labelLogin.Location = new Point(x, labelLogin.Location.Y);
         }
 
         #region Move Window
@@ -42,15 +42,15 @@ namespace MCDMSolver.Forms
         }
         #endregion
 
-        private void BtnExit_Click(object sender, EventArgs e)
+        private void LinkSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            SignUp signUpPage = new SignUp();
+            signUpPage.Show();
             this.Close();
         }
 
-        private void LinkLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
         {
-            Login loginPage = new Login();
-            loginPage.Show();
             this.Close();
         }
     }

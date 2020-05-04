@@ -16,7 +16,7 @@ namespace MCDMSolver
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.SignUp());
+            Application.Run(new Forms.MainForm());
         }
     }
 }
