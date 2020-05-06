@@ -22,15 +22,11 @@ namespace MCDMSolver.Forms
             InitializeComponent();
         }
 
-        [DllImport("user32.dll")]
-        static extern bool HideCaret(IntPtr hWnd);
-
         private void itemPage_Load(object sender, EventArgs e)
         {
             labelName.Text = _itemName;
             labelMiniDescription.Text = _itemMiniDescription;
             labelDescription.Text = _itemDescription;
-            HideCaret(labelDescription.Handle);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
