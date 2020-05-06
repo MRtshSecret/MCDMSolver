@@ -101,5 +101,10 @@ namespace MCDMSolver.Forms
         {
             openChildForm(new Forms.Due());
         }
+
+        private void btnAccountManager_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Forms.AccountManager());
+        }
     }
 }
