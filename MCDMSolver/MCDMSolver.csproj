@@ -177,6 +177,12 @@
     <EmbeddedResource Include="UserControls\Templates.resx">
       <DependentUpon>Templates.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Dll\MaterialSkin.0.2.1\.signature.p7s" />
+    <None Include="Dll\MaterialSkin.0.2.1\MaterialSkin.0.2.1.nupkg" />
+    <None Include="Dll\MetroModernUI.1.4.0.0\.signature.p7s" />
+    <None Include="Dll\MetroModernUI.1.4.0.0\MetroModernUI.1.4.0.0.nupkg" />
+    <None Include="Dll\PersianMaterialSkin.2.0.3\.signature.p7s" />
+    <None Include="Dll\PersianMaterialSkin.2.0.3\PersianMaterialSkin.2.0.3.nupkg" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -199,6 +205,11 @@
     <Folder Include="Modules\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dll\MaterialSkin.0.2.1\lib\MaterialSkin.dll" />
+    <Content Include="Dll\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll" />
+    <Content Include="Dll\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll" />
+    <Content Include="Dll\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll" />
+    <Content Include="Dll\PersianMaterialSkin.2.0.3\lib\net45\MaterialSkin.dll" />
     <Content Include="Resource\directional.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
