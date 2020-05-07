@@ -15,7 +15,7 @@ namespace MCDMSolver.Forms
         public Loading()
         {
             InitializeComponent();
-            // Mamad Nobari
+            // Mamad Nobar
         }
 
         private void TableLayoutPanel2_Paint(object sender, PaintEventArgs e)
