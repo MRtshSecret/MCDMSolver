@@ -10,17 +10,15 @@ using System.Windows.Forms;
 
 namespace MCDMSolver.Forms
 {
-    public partial class Loading : Form
+    public partial class TemplateDetail : Form
     {
-        public Loading()
+        public TemplateDetail()
         {
             InitializeComponent();
-            // Mamad Nobar
         }
-
-        private void TableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        private void BtnClose_Click_1(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

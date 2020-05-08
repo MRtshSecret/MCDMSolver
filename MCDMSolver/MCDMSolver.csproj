@@ -33,6 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PersianMaterialSkin.2.0.3\lib\net45\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,14 +58,107 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AccountManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountManager.Designer.cs">
+      <DependentUpon>AccountManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Due.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Due.Designer.cs">
+      <DependentUpon>Due.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\itemPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\itemPage.Designer.cs">
+      <DependentUpon>itemPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Loading.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Loading.Designer.cs">
       <DependentUpon>Loading.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\newTemplateSuggestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\newTemplateSuggestion.Designer.cs">
+      <DependentUpon>newTemplateSuggestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TemplateDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TemplateDetail.Designer.cs">
+      <DependentUpon>TemplateDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\itemDescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\itemDescription.Designer.cs">
+      <DependentUpon>itemDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RecentlyProjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RecentlyProjects.Designer.cs">
+      <DependentUpon>RecentlyProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Templates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Templates.Designer.cs">
+      <DependentUpon>Templates.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AccountManager.resx">
+      <DependentUpon>AccountManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Due.resx">
+      <DependentUpon>Due.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\itemPage.resx">
+      <DependentUpon>itemPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\newTemplateSuggestion.resx">
+      <DependentUpon>newTemplateSuggestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TemplateDetail.resx">
+      <DependentUpon>TemplateDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +168,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControls\itemDescription.resx">
+      <DependentUpon>itemDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RecentlyProjects.resx">
+      <DependentUpon>RecentlyProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Templates.resx">
+      <DependentUpon>Templates.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -82,7 +197,17 @@
     <Folder Include="FileManager\Temp\" />
     <Folder Include="Langs\" />
     <Folder Include="Modules\" />
-    <Folder Include="Resource\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\directional.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\next.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\protestant.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
