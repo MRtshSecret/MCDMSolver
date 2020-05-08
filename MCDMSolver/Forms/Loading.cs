@@ -15,7 +15,7 @@ namespace MCDMSolver.Forms
         public Loading()
         {
             InitializeComponent();
-            // Mamad Nobari
+            // Mamad Nobar
         }
     }
 }
