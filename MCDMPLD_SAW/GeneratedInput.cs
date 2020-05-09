@@ -24,8 +24,13 @@ namespace MCDMPLD_SAW
 
         private void GeneratedInput_Load(object sender, EventArgs e)
         {
-            this.Dock = DockStyle.Top;
+            //this.Dock = DockStyle.Top;
             labelRowAndCols.Text = numberLabel;
+        }
+
+        private void txtBoxReadName_Leave(object sender, EventArgs e)
+        {
+            ReadName = txtBoxReadName.Text;
         }
     }
 }

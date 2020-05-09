@@ -69,7 +69,8 @@
             this.txtBoxReadName.Margin = new System.Windows.Forms.Padding(10);
             this.txtBoxReadName.Name = "txtBoxReadName";
             this.txtBoxReadName.Size = new System.Drawing.Size(689, 20);
-            this.txtBoxReadName.TabIndex = 1;
+            this.txtBoxReadName.TabIndex = 0;
+            this.txtBoxReadName.Leave += new System.EventHandler(this.txtBoxReadName_Leave);
             // 
             // GeneratedInput
             // 
@@ -90,6 +91,6 @@
 
         private System.Windows.Forms.TableLayoutPanel panelGenerate;
         private System.Windows.Forms.Label labelRowAndCols;
-        private System.Windows.Forms.TextBox txtBoxReadName;
+        public System.Windows.Forms.TextBox txtBoxReadName;
     }
 }
