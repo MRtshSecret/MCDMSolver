@@ -39,35 +39,35 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnNextStep2 = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.panelGenerateditems = new System.Windows.Forms.FlowLayoutPanel();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPreviousStep1 = new System.Windows.Forms.Button();
             this.dataGridViewStep2 = new System.Windows.Forms.DataGridView();
             this.btnNextStep3 = new System.Windows.Forms.Button();
-            this.btnPreviousStep1 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabControl.SuspendLayout();
             this.Step1Page.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStep2)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -237,6 +237,18 @@
             this.btnNextStep2.UseVisualStyleBackColor = true;
             this.btnNextStep2.Click += new System.EventHandler(this.btnNextStep_Click);
             // 
+            // panelGenerateditems
+            // 
+            this.panelGenerateditems.AutoScroll = true;
+            this.panelGenerateditems.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelGenerateditems.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.panelGenerateditems.Location = new System.Drawing.Point(3, 3);
+            this.panelGenerateditems.Name = "panelGenerateditems";
+            this.panelGenerateditems.Padding = new System.Windows.Forms.Padding(25, 10, 25, 10);
+            this.panelGenerateditems.Size = new System.Drawing.Size(779, 589);
+            this.panelGenerateditems.TabIndex = 5001;
+            this.panelGenerateditems.WrapContents = false;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel3);
@@ -247,48 +259,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "مرحله دوم";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.tableLayoutPanel4);
-            this.tabPage3.Location = new System.Drawing.Point(4, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(994, 647);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "مرحله سوم";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.tableLayoutPanel5);
-            this.tabPage4.Location = new System.Drawing.Point(4, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(994, 647);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "مرحله چهارم";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 4);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(994, 647);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "مرحله پنجم";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // panelGenerateditems
-            // 
-            this.panelGenerateditems.AutoScroll = true;
-            this.panelGenerateditems.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelGenerateditems.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.panelGenerateditems.Location = new System.Drawing.Point(3, 3);
-            this.panelGenerateditems.Name = "panelGenerateditems";
-            this.panelGenerateditems.Padding = new System.Windows.Forms.Padding(25, 75, 25, 3);
-            this.panelGenerateditems.Size = new System.Drawing.Size(779, 589);
-            this.panelGenerateditems.TabIndex = 5001;
-            this.panelGenerateditems.WrapContents = false;
             // 
             // tableLayoutPanel3
             // 
@@ -307,6 +277,18 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(988, 641);
             this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // btnPreviousStep1
+            // 
+            this.btnPreviousStep1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPreviousStep1.Location = new System.Drawing.Point(876, 609);
+            this.btnPreviousStep1.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.btnPreviousStep1.Name = "btnPreviousStep1";
+            this.btnPreviousStep1.Size = new System.Drawing.Size(102, 29);
+            this.btnPreviousStep1.TabIndex = 3;
+            this.btnPreviousStep1.Text = "مرحله قبلی";
+            this.btnPreviousStep1.UseVisualStyleBackColor = true;
+            this.btnPreviousStep1.Click += new System.EventHandler(this.btnPreviousStep1_Click);
             // 
             // dataGridViewStep2
             // 
@@ -331,17 +313,16 @@
             this.btnNextStep3.UseVisualStyleBackColor = true;
             this.btnNextStep3.Click += new System.EventHandler(this.btnNextStep3_Click);
             // 
-            // btnPreviousStep1
+            // tabPage3
             // 
-            this.btnPreviousStep1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPreviousStep1.Location = new System.Drawing.Point(876, 609);
-            this.btnPreviousStep1.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.btnPreviousStep1.Name = "btnPreviousStep1";
-            this.btnPreviousStep1.Size = new System.Drawing.Size(102, 29);
-            this.btnPreviousStep1.TabIndex = 3;
-            this.btnPreviousStep1.Text = "مرحله قبلی";
-            this.btnPreviousStep1.UseVisualStyleBackColor = true;
-            this.btnPreviousStep1.Click += new System.EventHandler(this.btnPreviousStep1_Click);
+            this.tabPage3.Controls.Add(this.tableLayoutPanel4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(994, 647);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "مرحله سوم";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel4
             // 
@@ -394,6 +375,16 @@
             this.button2.Text = "مرحله بعدی";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.tableLayoutPanel5);
+            this.tabPage4.Location = new System.Drawing.Point(4, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(994, 647);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "مرحله چهارم";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 3;
@@ -445,6 +436,15 @@
             this.button4.Text = "مرحله بعدی";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 4);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(994, 647);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "مرحله پنجم";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -464,12 +464,12 @@
             this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStep2)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);

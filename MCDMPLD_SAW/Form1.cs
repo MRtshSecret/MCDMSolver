@@ -56,6 +56,7 @@ namespace MCDMPLD_SAW
 
         private void btnNextStep_Click(object sender, EventArgs e)
         {
+            dtStep2.Columns.Add(" ");
             foreach (GeneratedInput item in panelGenerateditems.Controls)
             {
                 if (item.Name.Contains("column"))
