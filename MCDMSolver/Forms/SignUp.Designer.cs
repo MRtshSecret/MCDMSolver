@@ -510,15 +510,15 @@
             // 
             // labelSignUp
             // 
-            this.labelSignUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelSignUp.AutoSize = true;
+            this.labelSignUp.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labelSignUp.Font = new System.Drawing.Font("A Iranian Sans", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelSignUp.ForeColor = System.Drawing.Color.Gold;
-            this.labelSignUp.Location = new System.Drawing.Point(248, 63);
+            this.labelSignUp.Location = new System.Drawing.Point(0, 63);
             this.labelSignUp.Name = "labelSignUp";
-            this.labelSignUp.Size = new System.Drawing.Size(107, 31);
+            this.labelSignUp.Size = new System.Drawing.Size(594, 31);
             this.labelSignUp.TabIndex = 0;
             this.labelSignUp.Text = "ثبت نام";
+            this.labelSignUp.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // SignUp
             // 
@@ -526,7 +526,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(55)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(600, 600);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("A Iranian Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

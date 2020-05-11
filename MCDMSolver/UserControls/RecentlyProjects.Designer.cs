@@ -47,7 +47,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelProjectName, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelProjectDetails, 3, 0);
@@ -66,9 +66,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(750, 1);
+            this.label1.Location = new System.Drawing.Point(747, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 46);
+            this.label1.Size = new System.Drawing.Size(47, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "آیکون";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -77,7 +77,7 @@
             // 
             this.labelProjectName.AutoSize = true;
             this.labelProjectName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelProjectName.Location = new System.Drawing.Point(549, 1);
+            this.labelProjectName.Location = new System.Drawing.Point(546, 1);
             this.labelProjectName.Name = "labelProjectName";
             this.labelProjectName.Size = new System.Drawing.Size(194, 46);
             this.labelProjectName.TabIndex = 1;
@@ -90,7 +90,7 @@
             this.labelProjectDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelProjectDetails.Location = new System.Drawing.Point(257, 1);
             this.labelProjectDetails.Name = "labelProjectDetails";
-            this.labelProjectDetails.Size = new System.Drawing.Size(285, 46);
+            this.labelProjectDetails.Size = new System.Drawing.Size(282, 46);
             this.labelProjectDetails.TabIndex = 2;
             this.labelProjectDetails.Text = "توضیحات پروژه";
             this.labelProjectDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -130,12 +130,11 @@
             // 
             // userControlRecentlyProjects
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightGray;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("A Iranian Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "userControlRecentlyProjects";
             this.Size = new System.Drawing.Size(798, 48);

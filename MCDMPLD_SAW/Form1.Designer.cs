@@ -162,7 +162,7 @@
             this.cbbRows.Location = new System.Drawing.Point(3, 171);
             this.cbbRows.Name = "cbbRows";
             this.cbbRows.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbbRows.Size = new System.Drawing.Size(182, 21);
+            this.cbbRows.Size = new System.Drawing.Size(182, 26);
             this.cbbRows.TabIndex = 3;
             this.cbbRows.TabStop = false;
             // 
@@ -173,7 +173,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Location = new System.Drawing.Point(106, 142);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.Size = new System.Drawing.Size(75, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "تعداد ردیف ها:";
             // 
@@ -195,7 +195,7 @@
             this.cbbColumns.Location = new System.Drawing.Point(3, 79);
             this.cbbColumns.Name = "cbbColumns";
             this.cbbColumns.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbbColumns.Size = new System.Drawing.Size(182, 21);
+            this.cbbColumns.Size = new System.Drawing.Size(182, 26);
             this.cbbColumns.TabIndex = 1;
             this.cbbColumns.TabStop = false;
             // 
@@ -206,7 +206,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Location = new System.Drawing.Point(106, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.Size = new System.Drawing.Size(78, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "تعداد ستون ها:";
             // 
@@ -450,7 +450,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1002, 680);
             this.Controls.Add(this.tabControl);
-            this.Font = new System.Drawing.Font("A Iranian Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(1002, 680);
             this.Name = "Form1";

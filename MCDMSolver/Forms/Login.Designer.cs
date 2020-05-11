@@ -131,8 +131,8 @@
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.71429F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.28571F));
             this.tableLayoutPanel5.Controls.Add(this.label4, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.linkSignUp, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -149,9 +149,9 @@
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.ForeColor = System.Drawing.Color.Cyan;
-            this.label4.Location = new System.Drawing.Point(199, 0);
+            this.label4.Location = new System.Drawing.Point(227, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(288, 34);
+            this.label4.Size = new System.Drawing.Size(260, 34);
             this.label4.TabIndex = 0;
             this.label4.Text = "حساب کاربری ندارید؟";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -166,7 +166,7 @@
             this.linkSignUp.LinkColor = System.Drawing.Color.White;
             this.linkSignUp.Location = new System.Drawing.Point(3, 0);
             this.linkSignUp.Name = "linkSignUp";
-            this.linkSignUp.Size = new System.Drawing.Size(190, 34);
+            this.linkSignUp.Size = new System.Drawing.Size(218, 34);
             this.linkSignUp.TabIndex = 1;
             this.linkSignUp.TabStop = true;
             this.linkSignUp.Text = "ثبت نام";
@@ -252,16 +252,15 @@
             // 
             // labelLogin
             // 
-            this.labelLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelLogin.AutoSize = true;
-            this.labelLogin.Font = new System.Drawing.Font("A Iranian Sans", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelLogin.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelLogin.Font = new System.Drawing.Font("Vazir FD-WOL", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelLogin.ForeColor = System.Drawing.Color.Gold;
-            this.labelLogin.Location = new System.Drawing.Point(199, 63);
+            this.labelLogin.Location = new System.Drawing.Point(0, 52);
             this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(197, 31);
+            this.labelLogin.Size = new System.Drawing.Size(594, 42);
             this.labelLogin.TabIndex = 0;
             this.labelLogin.Text = "ورود به حساب";
+            this.labelLogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // panel2
             // 
@@ -290,7 +289,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(55)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(600, 600);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("A Iranian Sans", 8.25F);
+            this.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.ForeColor = System.Drawing.Color.Gold;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
@@ -316,7 +315,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.Label btnExit;
         private System.Windows.Forms.Label labelLogin;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label2;
@@ -328,5 +326,6 @@
         private System.Windows.Forms.Label label3;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label btnExit;
     }
 }

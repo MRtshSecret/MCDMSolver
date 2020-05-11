@@ -47,10 +47,10 @@
             this.panel200 = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.panelToolbar = new System.Windows.Forms.Panel();
-            this.btnAccountName = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Label();
-            this.btnMinimize = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnMinimize = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Label();
+            this.btnAccountName = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelLoadSubmenu.SuspendLayout();
@@ -72,9 +72,9 @@
             this.panelSideMenu.Controls.Add(this.btnDashboard);
             this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelSideMenu.Location = new System.Drawing.Point(774, 25);
+            this.panelSideMenu.Location = new System.Drawing.Point(772, 25);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 743);
+            this.panelSideMenu.Size = new System.Drawing.Size(250, 741);
             this.panelSideMenu.TabIndex = 2;
             // 
             // panel1
@@ -82,7 +82,7 @@
             this.panel1.Controls.Add(this.btnAccountManager);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 597);
+            this.panel1.Location = new System.Drawing.Point(0, 595);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 146);
             this.panel1.TabIndex = 6;
@@ -285,6 +285,7 @@
             // 
             // panel200
             // 
+            this.panel200.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel200.Controls.Add(this.panelChildForm);
             this.panel200.Controls.Add(this.panelSideMenu);
             this.panel200.Controls.Add(this.panelToolbar);
@@ -299,7 +300,7 @@
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(0, 25);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(774, 743);
+            this.panelChildForm.Size = new System.Drawing.Size(772, 741);
             this.panelChildForm.TabIndex = 3;
             // 
             // panelToolbar
@@ -310,52 +311,9 @@
             this.panelToolbar.Location = new System.Drawing.Point(0, 0);
             this.panelToolbar.Name = "panelToolbar";
             this.panelToolbar.Padding = new System.Windows.Forms.Padding(10, 1, 10, 0);
-            this.panelToolbar.Size = new System.Drawing.Size(1024, 25);
+            this.panelToolbar.Size = new System.Drawing.Size(1022, 25);
             this.panelToolbar.TabIndex = 0;
             this.panelToolbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelToolbar_MouseDown);
-            // 
-            // btnAccountName
-            // 
-            this.btnAccountName.AutoSize = true;
-            this.btnAccountName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAccountName.Font = new System.Drawing.Font("A Iranian Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnAccountName.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAccountName.Location = new System.Drawing.Point(767, 0);
-            this.btnAccountName.Name = "btnAccountName";
-            this.btnAccountName.Size = new System.Drawing.Size(184, 24);
-            this.btnAccountName.TabIndex = 4;
-            this.btnAccountName.Text = "مرتضی هوشنگ منش";
-            this.btnAccountName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAccountName.UseCompatibleTextRendering = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.AutoSize = true;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnClose.Font = new System.Drawing.Font("A Iranian Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnClose.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnClose.Location = new System.Drawing.Point(982, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(19, 24);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "X";
-            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnClose.Click += new System.EventHandler(this.BtnExit_Click);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.AutoSize = true;
-            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMinimize.Font = new System.Drawing.Font("A Iranian Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnMinimize.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMinimize.Location = new System.Drawing.Point(957, 0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(19, 24);
-            this.btnMinimize.TabIndex = 3;
-            this.btnMinimize.Text = "-";
-            this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
             // 
@@ -372,9 +330,52 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1004, 24);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1002, 24);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelToolbar_MouseDown);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.AutoSize = true;
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMinimize.Font = new System.Drawing.Font("A Iranian Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnMinimize.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMinimize.Location = new System.Drawing.Point(955, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(19, 24);
+            this.btnMinimize.TabIndex = 3;
+            this.btnMinimize.Text = "-";
+            this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnClose
+            // 
+            this.btnClose.AutoSize = true;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnClose.Font = new System.Drawing.Font("A Iranian Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnClose.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnClose.Location = new System.Drawing.Point(980, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(19, 24);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "X";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClose.Click += new System.EventHandler(this.BtnExit_Click);
+            // 
+            // btnAccountName
+            // 
+            this.btnAccountName.AutoSize = true;
+            this.btnAccountName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAccountName.Font = new System.Drawing.Font("A Iranian Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnAccountName.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAccountName.Location = new System.Drawing.Point(765, 0);
+            this.btnAccountName.Name = "btnAccountName";
+            this.btnAccountName.Size = new System.Drawing.Size(184, 24);
+            this.btnAccountName.TabIndex = 4;
+            this.btnAccountName.Text = "مرتضی هوشنگ منش";
+            this.btnAccountName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAccountName.UseCompatibleTextRendering = true;
             // 
             // MainForm
             // 

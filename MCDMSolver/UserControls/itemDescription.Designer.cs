@@ -64,7 +64,7 @@
             // 
             this.labelDescriptions.AutoSize = true;
             this.labelDescriptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelDescriptions.Font = new System.Drawing.Font("A Iranian Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelDescriptions.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDescriptions.Location = new System.Drawing.Point(139, 7);
             this.labelDescriptions.Margin = new System.Windows.Forms.Padding(7);
             this.labelDescriptions.Name = "labelDescriptions";
@@ -91,7 +91,7 @@
             // 
             this.labelName.AutoSize = true;
             this.labelName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelName.Font = new System.Drawing.Font("A Iranian Sans", 10.25F);
+            this.labelName.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.Location = new System.Drawing.Point(624, 7);
             this.labelName.Margin = new System.Windows.Forms.Padding(7);
             this.labelName.Name = "labelName";
@@ -106,7 +106,7 @@
             // 
             this.labelMiniDescription.AutoSize = true;
             this.labelMiniDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelMiniDescription.Font = new System.Drawing.Font("A Iranian Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelMiniDescription.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMiniDescription.Location = new System.Drawing.Point(624, 54);
             this.labelMiniDescription.Margin = new System.Windows.Forms.Padding(7);
             this.labelMiniDescription.Name = "labelMiniDescription";
@@ -120,7 +120,7 @@
             // 
             this.labelPrice.AutoSize = true;
             this.labelPrice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelPrice.Font = new System.Drawing.Font("A Iranian Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelPrice.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPrice.Location = new System.Drawing.Point(3, 0);
             this.labelPrice.Name = "labelPrice";
             this.labelPrice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -137,7 +137,7 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("A Iranian Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Margin = new System.Windows.Forms.Padding(10);
             this.Name = "itemDescription";
             this.Size = new System.Drawing.Size(883, 95);
