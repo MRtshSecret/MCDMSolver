@@ -16,7 +16,8 @@ namespace MCDMSolver.Forms
         {
             InitializeComponent();
         }
-        private void BtnClose_Click_1(object sender, EventArgs e)
+
+        private void lablClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }

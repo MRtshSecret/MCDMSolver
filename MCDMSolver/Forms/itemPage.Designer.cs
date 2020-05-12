@@ -71,7 +71,7 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelName.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.labelName.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelName.ForeColor = System.Drawing.SystemColors.Control;
             this.labelName.Location = new System.Drawing.Point(526, 45);
@@ -86,7 +86,7 @@
             // labelMiniDescription
             // 
             this.labelMiniDescription.AutoSize = true;
-            this.labelMiniDescription.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelMiniDescription.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.labelMiniDescription.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelMiniDescription.ForeColor = System.Drawing.SystemColors.Control;
             this.labelMiniDescription.Location = new System.Drawing.Point(481, 80);
@@ -101,7 +101,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label3.Dock = System.Windows.Forms.DockStyle.Right;
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
             this.label3.Location = new System.Drawing.Point(494, 115);
@@ -116,7 +116,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("A Iranian Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
@@ -140,6 +140,7 @@
             // btnAccept
             // 
             this.btnAccept.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAccept.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAccept.Location = new System.Drawing.Point(12, 7);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(103, 28);
@@ -152,7 +153,7 @@
             this.labelDescription.AutoSize = true;
             this.labelDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(56)))), ((int)(((byte)(59)))));
             this.labelDescription.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelDescription.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelDescription.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.labelDescription.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelDescription.ForeColor = System.Drawing.SystemColors.Control;
             this.labelDescription.Location = new System.Drawing.Point(15, 165);

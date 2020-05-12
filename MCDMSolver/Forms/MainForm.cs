@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,12 @@ namespace MCDMSolver.Forms
         public MainForm()
         {
             InitializeComponent();
-            customizeDesign();
+            btnNew.btnImage = Image.FromFile(Directory.GetCurrentDirectory() + @"\Resource\new32x32.png");
+            btnLoad.btnImage = Image.FromFile(Directory.GetCurrentDirectory() + @"\Resource\folder32x32.png");
+            btnDashboard.btnImage = Image.FromFile(Directory.GetCurrentDirectory() + @"\Resource\home32x32.png");
+            btnDashboard.btnText = "داشبورد";
+            btnNew.btnText = "جدید";
+            btnLoad.btnText = "بارگزاری";
         }
 
         #region Move Window
@@ -37,44 +43,6 @@ namespace MCDMSolver.Forms
         }
         #endregion
 
-        private void customizeDesign()
-        {
-            panelLoadSubmenu.Visible = false;
-            panelNewSubmenu.Visible = false;
-
-        }
-        /// <summary>
-        /// Hide SubMenu For Menu Buttons
-        /// </summary>
-        private void hideSubMenu()
-        {
-            if(panelNewSubmenu.Visible == true)
-                panelNewSubmenu.Visible = false;
-            if (panelLoadSubmenu.Visible == true)
-                panelLoadSubmenu.Visible = false;
-        }
-
-        private void showSubMenu(Panel subMenu)
-        {
-            if (subMenu.Visible == false)
-            {
-                hideSubMenu();
-                subMenu.Visible = true;
-            }
-            else
-                subMenu.Visible = false;
-        }
-
-        private void BtnNew_Click(object sender, EventArgs e)
-        {
-            showSubMenu(panelNewSubmenu);
-        }
-
-        private void BtnTest1_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
-            openChildForm(new Forms.newTemplateSuggestion());
-        }
 
         private Form activeForm = null;
         private void openChildForm(Form childForm)
