@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panelGenerate = new System.Windows.Forms.TableLayoutPanel();
-            this.labelRowAndCols = new System.Windows.Forms.Label();
+            this.labelRows = new System.Windows.Forms.Label();
             this.txtBoxReadName = new System.Windows.Forms.TextBox();
             this.panelGenerate.SuspendLayout();
             this.SuspendLayout();
@@ -39,7 +39,7 @@
             this.panelGenerate.ColumnCount = 1;
             this.panelGenerate.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.panelGenerate.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.panelGenerate.Controls.Add(this.labelRowAndCols, 0, 0);
+            this.panelGenerate.Controls.Add(this.labelRows, 0, 0);
             this.panelGenerate.Controls.Add(this.txtBoxReadName, 0, 1);
             this.panelGenerate.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelGenerate.Location = new System.Drawing.Point(0, 0);
@@ -51,16 +51,16 @@
             this.panelGenerate.Size = new System.Drawing.Size(709, 63);
             this.panelGenerate.TabIndex = 2;
             // 
-            // labelRowAndCols
+            // labelRows
             // 
-            this.labelRowAndCols.AutoSize = true;
-            this.labelRowAndCols.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelRowAndCols.Location = new System.Drawing.Point(3, 0);
-            this.labelRowAndCols.Name = "labelRowAndCols";
-            this.labelRowAndCols.Size = new System.Drawing.Size(703, 25);
-            this.labelRowAndCols.TabIndex = 0;
-            this.labelRowAndCols.Text = "ستون {0} ردیف {1} :";
-            this.labelRowAndCols.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.labelRows.AutoSize = true;
+            this.labelRows.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelRows.Location = new System.Drawing.Point(3, 0);
+            this.labelRows.Name = "labelRows";
+            this.labelRows.Size = new System.Drawing.Size(703, 25);
+            this.labelRows.TabIndex = 0;
+            this.labelRows.Text = "نام ردیف:";
+            this.labelRows.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // txtBoxReadName
             // 
@@ -70,7 +70,6 @@
             this.txtBoxReadName.Name = "txtBoxReadName";
             this.txtBoxReadName.Size = new System.Drawing.Size(689, 20);
             this.txtBoxReadName.TabIndex = 0;
-            this.txtBoxReadName.Leave += new System.EventHandler(this.txtBoxReadName_Leave);
             // 
             // GeneratedInput
             // 
@@ -90,7 +89,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel panelGenerate;
-        private System.Windows.Forms.Label labelRowAndCols;
+        private System.Windows.Forms.Label labelRows;
         public System.Windows.Forms.TextBox txtBoxReadName;
     }
 }

@@ -58,6 +58,12 @@
     <Compile Include="GeneratedInput.Designer.cs">
       <DependentUpon>GeneratedInput.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeneratedInputColumns.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneratedInputColumns.Designer.cs">
+      <DependentUpon>GeneratedInputColumns.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GeneratedInput.resx">
       <DependentUpon>GeneratedInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneratedInputColumns.resx">
+      <DependentUpon>GeneratedInputColumns.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

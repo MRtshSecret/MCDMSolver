@@ -12,7 +12,6 @@ namespace MCDMPLD_SAW
 {
     public partial class GeneratedInput : UserControl
     {
-        public int Col { get; set; }
         public int Row { get; set; }
         public string numberLabel { get; set; }
         public string ReadName { get; set; }
@@ -25,12 +24,6 @@ namespace MCDMPLD_SAW
         private void GeneratedInput_Load(object sender, EventArgs e)
         {
             //this.Dock = DockStyle.Top;
-            labelRowAndCols.Text = numberLabel;
-        }
-
-        private void txtBoxReadName_Leave(object sender, EventArgs e)
-        {
-            ReadName = txtBoxReadName.Text;
         }
     }
 }
