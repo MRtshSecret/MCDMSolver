@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TemplateDetail));
             this.panelMain = new System.Windows.Forms.Panel();
+            this.btnCreate = new MCDMSolver.UserControls.CustomButton();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.picBoxTemplateDetail = new System.Windows.Forms.PictureBox();
             this.picboxNext = new System.Windows.Forms.PictureBox();
             this.picboxPrevious = new System.Windows.Forms.PictureBox();
-            this.btnCreate = new MCDMSolver.UserControls.CustomButton();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTemplateDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxNext)).BeginInit();
@@ -63,6 +63,20 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(597, 293);
             this.panelMain.TabIndex = 0;
+            // 
+            // btnCreate
+            // 
+            this.btnCreate.BackColor = System.Drawing.Color.DarkGray;
+            this.btnCreate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnCreate.btnImage = ((System.Drawing.Image)(resources.GetObject("btnCreate.btnImage")));
+            this.btnCreate.btnText = "انتخاب";
+            this.btnCreate.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCreate.Location = new System.Drawing.Point(233, 165);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.btnCreate.Size = new System.Drawing.Size(79, 68);
+            this.btnCreate.TabIndex = 10;
             // 
             // label3
             // 
@@ -145,20 +159,6 @@
             this.picboxPrevious.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxPrevious.TabIndex = 0;
             this.picboxPrevious.TabStop = false;
-            // 
-            // btnCreate
-            // 
-            this.btnCreate.BackColor = System.Drawing.Color.DarkGray;
-            this.btnCreate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnCreate.btnImage = ((System.Drawing.Image)(resources.GetObject("btnCreate.btnImage")));
-            this.btnCreate.btnText = "ایجاد";
-            this.btnCreate.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCreate.Location = new System.Drawing.Point(233, 165);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.btnCreate.Size = new System.Drawing.Size(79, 68);
-            this.btnCreate.TabIndex = 10;
             // 
             // TemplateDetail
             // 

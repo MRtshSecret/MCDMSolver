@@ -56,6 +56,13 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.panelMiddlePage5 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.labelExample = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.Step1Page.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -70,6 +77,10 @@
             this.tabPage4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.panelMiddlePage5.SuspendLayout();
+            this.flowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -438,12 +449,97 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.tableLayoutPanel6);
             this.tabPage5.Location = new System.Drawing.Point(4, 4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(994, 647);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "مرحله پنجم";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 3;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel6.Controls.Add(this.button5, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.button6, 2, 1);
+            this.tableLayoutPanel6.Controls.Add(this.panelMiddlePage5, 1, 0);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 2;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(994, 647);
+            this.tableLayoutPanel6.TabIndex = 2;
+            // 
+            // button6
+            // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button6.Location = new System.Drawing.Point(10, 615);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(102, 29);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "صفحه اول";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button5.Location = new System.Drawing.Point(882, 615);
+            this.button5.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(102, 29);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "مرحله قبلی";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // panelMiddlePage5
+            // 
+            this.panelMiddlePage5.Controls.Add(this.label3);
+            this.panelMiddlePage5.Controls.Add(this.flowLayoutPanel);
+            this.panelMiddlePage5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMiddlePage5.Location = new System.Drawing.Point(118, 3);
+            this.panelMiddlePage5.Name = "panelMiddlePage5";
+            this.panelMiddlePage5.Size = new System.Drawing.Size(758, 606);
+            this.panelMiddlePage5.TabIndex = 4;
+            // 
+            // flowLayoutPanel
+            // 
+            this.flowLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel.AutoScroll = true;
+            this.flowLayoutPanel.Controls.Add(this.labelExample);
+            this.flowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel.Location = new System.Drawing.Point(267, 51);
+            this.flowLayoutPanel.Name = "flowLayoutPanel";
+            this.flowLayoutPanel.Size = new System.Drawing.Size(200, 552);
+            this.flowLayoutPanel.TabIndex = 0;
+            this.flowLayoutPanel.WrapContents = false;
+            // 
+            // labelExample
+            // 
+            this.labelExample.AutoSize = true;
+            this.labelExample.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelExample.Location = new System.Drawing.Point(122, 0);
+            this.labelExample.Name = "labelExample";
+            this.labelExample.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.labelExample.Size = new System.Drawing.Size(75, 38);
+            this.labelExample.TabIndex = 0;
+            this.labelExample.Text = "نمونه رتبه بندی";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(400, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 18);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "رتبه بندی حاصل:";
             // 
             // Form1
             // 
@@ -472,6 +568,12 @@
             this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.panelMiddlePage5.ResumeLayout(false);
+            this.panelMiddlePage5.PerformLayout();
+            this.flowLayoutPanel.ResumeLayout(false);
+            this.flowLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -506,6 +608,13 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel panelMiddlePage5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel;
+        private System.Windows.Forms.Label labelExample;
+        private System.Windows.Forms.Label label3;
     }
 }
 

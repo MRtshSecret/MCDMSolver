@@ -16,12 +16,12 @@ namespace MCDMSolver.Forms
         public MainForm()
         {
             InitializeComponent();
-            btnNew.btnImage = Image.FromFile(Directory.GetCurrentDirectory() + @"\Resource\new32x32.png");
-            btnLoad.btnImage = Image.FromFile(Directory.GetCurrentDirectory() + @"\Resource\folder32x32.png");
-            btnDashboard.btnImage = Image.FromFile(Directory.GetCurrentDirectory() + @"\Resource\home32x32.png");
-            btnDashboard.btnText = "داشبورد";
-            btnNew.btnText = "جدید";
-            btnLoad.btnText = "بارگزاری";
+            //btnNew.btnImage = Image.FromFile(Directory.GetCurrentDirectory() + @"\Resource\new32x32.png");
+            //btnLoad.btnImage = Image.FromFile(Directory.GetCurrentDirectory() + @"\Resource\folder32x32.png");
+            //btnDashboard.btnImage = Image.FromFile(Directory.GetCurrentDirectory() + @"\Resource\home32x32.png");
+            //btnDashboard.btnText = "داشبورد";
+            //btnNew.btnText = "جدید";
+            //btnLoad.btnText = "بارگزاری";
         }
 
         #region Move Window
@@ -64,7 +64,6 @@ namespace MCDMSolver.Forms
             Application.Exit();
         }
 
-
         private void BtnDashboard_Click(object sender, EventArgs e)
         {
             openChildForm(new Forms.Due());
@@ -73,6 +72,16 @@ namespace MCDMSolver.Forms
         private void btnAccountManager_Click(object sender, EventArgs e)
         {
             openChildForm(new Forms.AccountManager());
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Forms.Due());
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

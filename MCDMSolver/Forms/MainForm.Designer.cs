@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.btnLoad = new MCDMSolver.UserControls.CustomButton();
+            this.btnNew = new MCDMSolver.UserControls.CustomButton();
+            this.btnDashboard = new MCDMSolver.UserControls.CustomButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAccountManager = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -40,9 +44,6 @@
             this.btnMinimize = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Label();
             this.btnAccountName = new System.Windows.Forms.Label();
-            this.btnDashboard = new MCDMSolver.UserControls.CustomButton();
-            this.btnNew = new MCDMSolver.UserControls.CustomButton();
-            this.btnLoad = new MCDMSolver.UserControls.CustomButton();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel200.SuspendLayout();
@@ -65,6 +66,51 @@
             this.panelSideMenu.Size = new System.Drawing.Size(98, 741);
             this.panelSideMenu.TabIndex = 2;
             // 
+            // btnLoad
+            // 
+            this.btnLoad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnLoad.btnImage = ((System.Drawing.Image)(resources.GetObject("btnLoad.btnImage")));
+            this.btnLoad.btnText = "بارگزاری";
+            this.btnLoad.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLoad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLoad.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnLoad.Location = new System.Drawing.Point(0, 274);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(98, 87);
+            this.btnLoad.TabIndex = 9;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
+            // btnNew
+            // 
+            this.btnNew.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnNew.btnImage = ((System.Drawing.Image)(resources.GetObject("btnNew.btnImage")));
+            this.btnNew.btnText = "جدید";
+            this.btnNew.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNew.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNew.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNew.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnNew.Location = new System.Drawing.Point(0, 187);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(98, 87);
+            this.btnNew.TabIndex = 8;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnDashboard.btnImage = ((System.Drawing.Image)(resources.GetObject("btnDashboard.btnImage")));
+            this.btnDashboard.btnText = "داشبورد";
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 100);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(98, 87);
+            this.btnDashboard.TabIndex = 7;
+            this.btnDashboard.Click += new System.EventHandler(this.BtnDashboard_Click);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnAccountManager);
@@ -81,15 +127,13 @@
             this.btnAccountManager.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnAccountManager.FlatAppearance.BorderSize = 0;
             this.btnAccountManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccountManager.ForeColor = System.Drawing.Color.Yellow;
+            this.btnAccountManager.ForeColor = System.Drawing.SystemColors.Control;
             this.btnAccountManager.Location = new System.Drawing.Point(0, 36);
             this.btnAccountManager.Name = "btnAccountManager";
-            this.btnAccountManager.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.btnAccountManager.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnAccountManager.Size = new System.Drawing.Size(98, 55);
             this.btnAccountManager.TabIndex = 3;
             this.btnAccountManager.Text = "مدیریت حساب";
-            this.btnAccountManager.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAccountManager.UseVisualStyleBackColor = true;
             this.btnAccountManager.Click += new System.EventHandler(this.btnAccountManager_Click);
             // 
@@ -99,15 +143,13 @@
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.ForeColor = System.Drawing.Color.Yellow;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.Control;
             this.btnExit.Location = new System.Drawing.Point(0, 91);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.btnExit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnExit.Size = new System.Drawing.Size(98, 55);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "خروج";
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
@@ -213,42 +255,6 @@
             this.btnAccountName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccountName.UseCompatibleTextRendering = true;
             // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDashboard.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.Yellow;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 100);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(98, 87);
-            this.btnDashboard.TabIndex = 7;
-            // 
-            // btnNew
-            // 
-            this.btnNew.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnNew.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNew.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNew.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.ForeColor = System.Drawing.Color.Yellow;
-            this.btnNew.Location = new System.Drawing.Point(0, 187);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(98, 87);
-            this.btnNew.TabIndex = 8;
-            // 
-            // btnLoad
-            // 
-            this.btnLoad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnLoad.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLoad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLoad.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoad.ForeColor = System.Drawing.Color.Yellow;
-            this.btnLoad.Location = new System.Drawing.Point(0, 274);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(98, 87);
-            this.btnLoad.TabIndex = 9;
-            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -270,7 +276,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panelLogo;
@@ -278,12 +283,13 @@
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Button btnAccountManager;
         private System.Windows.Forms.Panel panelToolbar;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label btnMinimize;
         private System.Windows.Forms.Label btnClose;
         private System.Windows.Forms.Label btnAccountName;
         private UserControls.CustomButton btnDashboard;
         private UserControls.CustomButton btnNew;
         private UserControls.CustomButton btnLoad;
+        private System.Windows.Forms.Panel panelSideMenu;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
