@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.btnLoad = new MCDMSolver.UserControls.CustomButton();
-            this.btnNew = new MCDMSolver.UserControls.CustomButton();
-            this.btnDashboard = new MCDMSolver.UserControls.CustomButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAccountManager = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -44,6 +41,9 @@
             this.btnMinimize = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Label();
             this.btnAccountName = new System.Windows.Forms.Label();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel200.SuspendLayout();
@@ -66,51 +66,6 @@
             this.panelSideMenu.Size = new System.Drawing.Size(98, 741);
             this.panelSideMenu.TabIndex = 2;
             // 
-            // btnLoad
-            // 
-            this.btnLoad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnLoad.btnImage = ((System.Drawing.Image)(resources.GetObject("btnLoad.btnImage")));
-            this.btnLoad.btnText = "بارگزاری";
-            this.btnLoad.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLoad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLoad.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoad.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLoad.Location = new System.Drawing.Point(0, 274);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(98, 87);
-            this.btnLoad.TabIndex = 9;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
-            // 
-            // btnNew
-            // 
-            this.btnNew.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnNew.btnImage = ((System.Drawing.Image)(resources.GetObject("btnNew.btnImage")));
-            this.btnNew.btnText = "جدید";
-            this.btnNew.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNew.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNew.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnNew.Location = new System.Drawing.Point(0, 187);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(98, 87);
-            this.btnNew.TabIndex = 8;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnDashboard.btnImage = ((System.Drawing.Image)(resources.GetObject("btnDashboard.btnImage")));
-            this.btnDashboard.btnText = "داشبورد";
-            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDashboard.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 100);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(98, 87);
-            this.btnDashboard.TabIndex = 7;
-            this.btnDashboard.Click += new System.EventHandler(this.BtnDashboard_Click);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnAccountManager);
@@ -125,7 +80,6 @@
             // 
             this.btnAccountManager.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAccountManager.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnAccountManager.FlatAppearance.BorderSize = 0;
             this.btnAccountManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccountManager.ForeColor = System.Drawing.SystemColors.Control;
             this.btnAccountManager.Location = new System.Drawing.Point(0, 36);
@@ -141,7 +95,6 @@
             // 
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.ForeColor = System.Drawing.SystemColors.Control;
             this.btnExit.Location = new System.Drawing.Point(0, 91);
@@ -225,6 +178,7 @@
             this.btnMinimize.TabIndex = 3;
             this.btnMinimize.Text = "-";
             this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // btnClose
             // 
@@ -254,6 +208,55 @@
             this.btnAccountName.Text = "مرتضی هوشنگ منش";
             this.btnAccountName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccountName.UseCompatibleTextRendering = true;
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 100);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Padding = new System.Windows.Forms.Padding(5);
+            this.btnDashboard.Size = new System.Drawing.Size(98, 71);
+            this.btnDashboard.TabIndex = 7;
+            this.btnDashboard.Text = "داشبورد";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.BtnDashboard_Click);
+            // 
+            // btnNew
+            // 
+            this.btnNew.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNew.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnNew.Image = ((System.Drawing.Image)(resources.GetObject("btnNew.Image")));
+            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnNew.Location = new System.Drawing.Point(0, 171);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Padding = new System.Windows.Forms.Padding(5);
+            this.btnNew.Size = new System.Drawing.Size(98, 71);
+            this.btnNew.TabIndex = 8;
+            this.btnNew.Text = "جدید";
+            this.btnNew.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNew.UseVisualStyleBackColor = true;
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoad.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLoad.Image = ((System.Drawing.Image)(resources.GetObject("btnLoad.Image")));
+            this.btnLoad.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnLoad.Location = new System.Drawing.Point(0, 242);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Padding = new System.Windows.Forms.Padding(5);
+            this.btnLoad.Size = new System.Drawing.Size(98, 71);
+            this.btnLoad.TabIndex = 9;
+            this.btnLoad.Text = "بارگزاری";
+            this.btnLoad.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnLoad.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -286,10 +289,10 @@
         private System.Windows.Forms.Label btnMinimize;
         private System.Windows.Forms.Label btnClose;
         private System.Windows.Forms.Label btnAccountName;
-        private UserControls.CustomButton btnDashboard;
-        private UserControls.CustomButton btnNew;
-        private UserControls.CustomButton btnLoad;
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Button btnNew;
     }
 }

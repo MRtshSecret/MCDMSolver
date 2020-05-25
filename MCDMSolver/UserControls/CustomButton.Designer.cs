@@ -55,9 +55,10 @@
             // 
             this.textUnderPicture.AutoSize = true;
             this.textUnderPicture.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textUnderPicture.Location = new System.Drawing.Point(3, 65);
+            this.textUnderPicture.Location = new System.Drawing.Point(0, 65);
+            this.textUnderPicture.Margin = new System.Windows.Forms.Padding(0);
             this.textUnderPicture.Name = "textUnderPicture";
-            this.textUnderPicture.Size = new System.Drawing.Size(98, 17);
+            this.textUnderPicture.Size = new System.Drawing.Size(104, 17);
             this.textUnderPicture.TabIndex = 0;
             this.textUnderPicture.Text = "متن";
             this.textUnderPicture.TextAlign = System.Drawing.ContentAlignment.TopCenter;
