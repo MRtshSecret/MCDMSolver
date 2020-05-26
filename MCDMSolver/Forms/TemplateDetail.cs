@@ -21,5 +21,15 @@ namespace MCDMSolver.Forms
         {
             this.Close();
         }
+
+        private void btnCreate_Load(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

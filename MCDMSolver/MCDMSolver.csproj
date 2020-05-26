@@ -251,5 +251,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MCDMPLD_SAW\MCDMPLD_SAW.csproj">
+      <Project>{b14fae29-7574-4455-80cf-aa2bd72840eb}</Project>
+      <Name>MCDMPLD_SAW</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

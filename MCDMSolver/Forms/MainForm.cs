@@ -45,7 +45,7 @@ namespace MCDMSolver.Forms
 
 
         private Form activeForm = null;
-        private void openChildForm(Form childForm)
+        public void openChildForm(Form childForm)
         {
             if (activeForm != null)
                 activeForm.Close();
@@ -76,7 +76,7 @@ namespace MCDMSolver.Forms
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            openChildForm(new Forms.Due());
+            openChildForm(new Forms.newTemplateSuggestion());
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
