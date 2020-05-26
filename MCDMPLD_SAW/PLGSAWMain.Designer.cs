@@ -127,6 +127,7 @@
             this.btnPreviousStep5.TabIndex = 3;
             this.btnPreviousStep5.Text = "مرحله قبلی";
             this.btnPreviousStep5.UseVisualStyleBackColor = true;
+            this.btnPreviousStep5.Click += new System.EventHandler(this.btnPreviousStep5_Click);
             // 
             // panelMiddlePage5
             // 
@@ -613,7 +614,7 @@
             this.tabControl.TabIndex = 0;
             this.tabControl.TabStop = false;
             // 
-            // MainForm
+            // PLGSAWMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1002, 680);
@@ -621,7 +622,7 @@
             this.Font = new System.Drawing.Font("Vazir", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(1002, 680);
-            this.Name = "MainForm";
+            this.Name = "PLGSAWMain";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.MainForm_Load);

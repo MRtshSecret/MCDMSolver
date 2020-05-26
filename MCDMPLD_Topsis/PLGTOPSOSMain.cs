@@ -209,6 +209,19 @@ namespace MCDMPLD_Topsis
             tabControl.SelectedTab = nextTab;
         }
 
+        private void btnPreviousStep5_Click(object sender, EventArgs e)
+        {
+            dataGridViewStep4.DataSource = null;
+            //Disable Other Tabs
+            if (tabControl.TabCount - 1 == tabControl.SelectedIndex)
+                return; // No more tabs to show!
+
+            tabControl.SelectedTab.Enabled = false;
+            var nextTab = tabControl.TabPages[tabControl.SelectedIndex - 1] as TabPage;
+            nextTab.Enabled = true;
+            tabControl.SelectedTab = nextTab;
+        }
+
         public void Calculate_SAW(List<decimal> sign1, List<double> weight1, DataTable dt)
         {
             try
