@@ -65,6 +65,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(747, 1);
             this.label1.Name = "label1";
@@ -76,6 +77,7 @@
             // labelProjectName
             // 
             this.labelProjectName.AutoSize = true;
+            this.labelProjectName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelProjectName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelProjectName.Location = new System.Drawing.Point(546, 1);
             this.labelProjectName.Name = "labelProjectName";
@@ -87,6 +89,7 @@
             // labelProjectDetails
             // 
             this.labelProjectDetails.AutoSize = true;
+            this.labelProjectDetails.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelProjectDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelProjectDetails.Location = new System.Drawing.Point(257, 1);
             this.labelProjectDetails.Name = "labelProjectDetails";
@@ -98,6 +101,7 @@
             // labelProjectDate
             // 
             this.labelProjectDate.AutoSize = true;
+            this.labelProjectDate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelProjectDate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelProjectDate.Location = new System.Drawing.Point(106, 1);
             this.labelProjectDate.Name = "labelProjectDate";
@@ -109,6 +113,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Location = new System.Drawing.Point(55, 1);
             this.label5.Name = "label5";
@@ -120,6 +125,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Location = new System.Drawing.Point(4, 1);
             this.label6.Name = "label6";
@@ -136,6 +142,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.ForeColor = System.Drawing.Color.Black;
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
             this.Name = "userControlRecentlyProjects";
             this.Size = new System.Drawing.Size(798, 48);
             this.Load += new System.EventHandler(this.UserControlRecentlyProjects_Load);

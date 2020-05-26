@@ -249,16 +249,19 @@
             // labelAccountName
             // 
             this.labelAccountName.AutoSize = true;
+            this.labelAccountName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelAccountName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelAccountName.Font = new System.Drawing.Font("A Iranian Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelAccountName.ForeColor = System.Drawing.SystemColors.Control;
             this.labelAccountName.Location = new System.Drawing.Point(765, 0);
             this.labelAccountName.Name = "labelAccountName";
+            this.labelAccountName.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.labelAccountName.Size = new System.Drawing.Size(184, 24);
             this.labelAccountName.TabIndex = 4;
-            this.labelAccountName.Text = "مرتضی هوشنگ منش";
+            this.labelAccountName.Text = "نام کامل کاربر";
             this.labelAccountName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.labelAccountName.UseCompatibleTextRendering = true;
+            this.labelAccountName.Click += new System.EventHandler(this.labelAccountName_Click);
             // 
             // MainForm
             // 

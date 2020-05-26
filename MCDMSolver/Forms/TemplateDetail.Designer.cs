@@ -149,6 +149,7 @@
             this.picboxNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxNext.TabIndex = 1;
             this.picboxNext.TabStop = false;
+            this.picboxNext.Visible = false;
             // 
             // picboxPrevious
             // 
@@ -161,6 +162,7 @@
             this.picboxPrevious.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxPrevious.TabIndex = 0;
             this.picboxPrevious.TabStop = false;
+            this.picboxPrevious.Visible = false;
             // 
             // TemplateDetail
             // 

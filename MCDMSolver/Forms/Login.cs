@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -54,10 +55,29 @@ namespace MCDMSolver.Forms
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
-        {
+        { 
+            labelPasswordError.Visible = false;
+            labelUsernameError.Visible = false;
             //gets username from api and do stuff but for deafult we're doing with 1
-            Classes.User.username = "1";
-            Classes.User.fullname = "آقای شماره یک";
+            if (txtUsername.Text == "1")
+            {
+                if(txtPassword.Text == "1")
+                {
+                    Classes.User.username = "1";
+                    Classes.User.fullname = "آقای شماره یک";
+                    Classes.User.Logged = true;
+                    this.Close();
+                }
+                else
+                {
+                    labelPasswordError.Visible = true;
+                }
+            }
+            else
+            {
+                SystemSounds.Beep.Play();
+                labelUsernameError.Visible = true;
+            }
         }
     }
 }

@@ -45,6 +45,7 @@
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -66,11 +67,11 @@
     <Compile Include="Forms\AccountManager.Designer.cs">
       <DependentUpon>AccountManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Due.cs">
+    <Compile Include="Forms\DashboardPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Due.Designer.cs">
-      <DependentUpon>Due.cs</DependentUpon>
+    <Compile Include="Forms\DashboardPage.Designer.cs">
+      <DependentUpon>DashboardPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\itemPage.cs">
       <SubType>Form</SubType>
@@ -149,8 +150,8 @@
     <EmbeddedResource Include="Forms\AccountManager.resx">
       <DependentUpon>AccountManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Due.resx">
-      <DependentUpon>Due.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\DashboardPage.resx">
+      <DependentUpon>DashboardPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\itemPage.resx">
       <DependentUpon>itemPage.cs</DependentUpon>

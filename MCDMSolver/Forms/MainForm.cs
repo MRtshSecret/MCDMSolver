@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MCDMSolver.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,8 +28,23 @@ namespace MCDMSolver.Forms
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            labelAccountName.Text = Classes.User.fullname;
             Classes.MainFormCaller.mainFormCallerVortex = this;
+            loadUserInformation();
+            Classes.User.Logged = false;
+        }
+
+        private void loadUserInformation()
+        {
+            if (Classes.User.Logged == false)
+            {
+                labelAccountName.Text = "ورود به حساب کاربری";
+                labelAccountName.ForeColor = Color.Red;
+            }
+            else
+            {
+                labelAccountName.Text = Classes.User.fullname;
+                labelAccountName.ForeColor = Color.White;
+            }
         }
 
         #region Move Window
@@ -73,7 +89,7 @@ namespace MCDMSolver.Forms
 
         private void BtnDashboard_Click(object sender, EventArgs e)
         {
-            openChildForm(new Forms.Due());
+            openChildForm(new Forms.DashboardPage());
         }
 
         private void btnAccountManager_Click(object sender, EventArgs e)
@@ -97,5 +113,18 @@ namespace MCDMSolver.Forms
 
         }
 
+        private void labelAccountName_Click(object sender, EventArgs e)
+        {
+            if(Classes.User.Logged == false)
+            {
+                Login loginPage = new Login();
+                loginPage.ShowDialog();
+                loadUserInformation();
+            }
+            else
+            {
+
+            }
+        }
     }
 }

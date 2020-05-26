@@ -69,6 +69,8 @@
             // cbbSort
             // 
             this.cbbSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbSort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbbSort.Font = new System.Drawing.Font("A Iranian Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.cbbSort.FormattingEnabled = true;
             this.cbbSort.Location = new System.Drawing.Point(3, 62);
@@ -79,7 +81,7 @@
             // btnPrivacySettings
             // 
             this.btnPrivacySettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrivacySettings.Location = new System.Drawing.Point(110, 631);
+            this.btnPrivacySettings.Location = new System.Drawing.Point(110, 626);
             this.btnPrivacySettings.Name = "btnPrivacySettings";
             this.btnPrivacySettings.Size = new System.Drawing.Size(99, 31);
             this.btnPrivacySettings.TabIndex = 6;
@@ -90,7 +92,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(99, 599);
+            this.label2.Location = new System.Drawing.Point(99, 605);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label2.Size = new System.Drawing.Size(113, 18);

@@ -29,23 +29,27 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.chbRememberMe = new System.Windows.Forms.CheckBox();
-            this.btnClose = new System.Windows.Forms.Label();
-            this.linkForgotPassword = new System.Windows.Forms.LinkLabel();
-            this.linkRegister = new System.Windows.Forms.LinkLabel();
+            this.labelUsernameError = new System.Windows.Forms.Label();
+            this.labelPasswordError = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.linkRegister = new System.Windows.Forms.LinkLabel();
+            this.linkForgotPassword = new System.Windows.Forms.LinkLabel();
+            this.btnClose = new System.Windows.Forms.Label();
+            this.chbRememberMe = new System.Windows.Forms.CheckBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelUsernameError);
+            this.panel1.Controls.Add(this.labelPasswordError);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.linkRegister);
             this.panel1.Controls.Add(this.linkForgotPassword);
@@ -64,75 +68,84 @@
             this.panel1.Size = new System.Drawing.Size(500, 450);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // labelUsernameError
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Vazir FD-WOL", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(194, 96);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ورود به حساب کاربری";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelUsernameError.ForeColor = System.Drawing.Color.Red;
+            this.labelUsernameError.Location = new System.Drawing.Point(101, 168);
+            this.labelUsernameError.Name = "labelUsernameError";
+            this.labelUsernameError.Size = new System.Drawing.Size(10, 20);
+            this.labelUsernameError.TabIndex = 14;
+            this.labelUsernameError.Text = "*";
+            this.labelUsernameError.Visible = false;
             // 
-            // panel2
+            // labelPasswordError
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.panel2.Location = new System.Drawing.Point(136, 120);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(3);
-            this.panel2.Size = new System.Drawing.Size(229, 1);
-            this.panel2.TabIndex = 1;
+            this.labelPasswordError.ForeColor = System.Drawing.Color.Red;
+            this.labelPasswordError.Location = new System.Drawing.Point(101, 211);
+            this.labelPasswordError.Name = "labelPasswordError";
+            this.labelPasswordError.Size = new System.Drawing.Size(10, 20);
+            this.labelPasswordError.TabIndex = 13;
+            this.labelPasswordError.Text = "*";
+            this.labelPasswordError.Visible = false;
             // 
-            // label2
+            // panel3
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(342, 170);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(58, 18);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "نام کاربری :";
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.panel3.Location = new System.Drawing.Point(258, 364);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1, 20);
+            this.panel3.TabIndex = 12;
             // 
-            // label3
+            // linkRegister
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(342, 213);
-            this.label3.Name = "label3";
-            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(57, 18);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "کلمه عبور :";
+            this.linkRegister.AutoSize = true;
+            this.linkRegister.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.linkRegister.Location = new System.Drawing.Point(162, 364);
+            this.linkRegister.Name = "linkRegister";
+            this.linkRegister.Size = new System.Drawing.Size(90, 18);
+            this.linkRegister.TabIndex = 11;
+            this.linkRegister.TabStop = true;
+            this.linkRegister.Text = "ساخت اکانت جدید";
+            this.linkRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkSignUp_LinkClicked);
             // 
-            // txtUsername
+            // linkForgotPassword
             // 
-            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsername.Font = new System.Drawing.Font("Vazir", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(117, 168);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(203, 25);
-            this.txtUsername.TabIndex = 4;
-            this.txtUsername.Text = "text";
+            this.linkForgotPassword.AutoSize = true;
+            this.linkForgotPassword.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.linkForgotPassword.Location = new System.Drawing.Point(268, 364);
+            this.linkForgotPassword.Name = "linkForgotPassword";
+            this.linkForgotPassword.Size = new System.Drawing.Size(75, 18);
+            this.linkForgotPassword.TabIndex = 10;
+            this.linkForgotPassword.TabStop = true;
+            this.linkForgotPassword.Text = "بازیابی رمز عبور";
+            this.linkForgotPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtPassword
+            // btnClose
             // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Font = new System.Drawing.Font("Vazir", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(117, 211);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(203, 25);
-            this.txtPassword.TabIndex = 5;
-            this.txtPassword.Text = "text";
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.AutoSize = true;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Location = new System.Drawing.Point(472, 9);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(16, 18);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.Text = "X";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClose.Click += new System.EventHandler(this.BtnExit_Click);
+            // 
+            // chbRememberMe
+            // 
+            this.chbRememberMe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbRememberMe.AutoSize = true;
+            this.chbRememberMe.Location = new System.Drawing.Point(271, 266);
+            this.chbRememberMe.Name = "chbRememberMe";
+            this.chbRememberMe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbRememberMe.Size = new System.Drawing.Size(94, 22);
+            this.chbRememberMe.TabIndex = 7;
+            this.chbRememberMe.Text = "مرا بخاطر بسپار";
+            this.chbRememberMe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.chbRememberMe.UseVisualStyleBackColor = true;
             // 
             // btnLogin
             // 
@@ -148,64 +161,75 @@
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // chbRememberMe
+            // txtPassword
             // 
-            this.chbRememberMe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chbRememberMe.AutoSize = true;
-            this.chbRememberMe.Location = new System.Drawing.Point(271, 266);
-            this.chbRememberMe.Name = "chbRememberMe";
-            this.chbRememberMe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chbRememberMe.Size = new System.Drawing.Size(94, 22);
-            this.chbRememberMe.TabIndex = 7;
-            this.chbRememberMe.Text = "مرا بخاطر بسپار";
-            this.chbRememberMe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chbRememberMe.UseVisualStyleBackColor = true;
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPassword.Font = new System.Drawing.Font("Vazir", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(117, 211);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(203, 25);
+            this.txtPassword.TabIndex = 5;
+            this.txtPassword.Text = "text";
             // 
-            // btnClose
+            // txtUsername
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.AutoSize = true;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Location = new System.Drawing.Point(472, 9);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(16, 18);
-            this.btnClose.TabIndex = 8;
-            this.btnClose.Text = "X";
-            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnClose.Click += new System.EventHandler(this.BtnExit_Click);
+            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsername.Font = new System.Drawing.Font("Vazir", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(117, 168);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(203, 25);
+            this.txtUsername.TabIndex = 4;
+            this.txtUsername.Text = "text";
             // 
-            // linkForgotPassword
+            // label3
             // 
-            this.linkForgotPassword.AutoSize = true;
-            this.linkForgotPassword.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.linkForgotPassword.Location = new System.Drawing.Point(268, 364);
-            this.linkForgotPassword.Name = "linkForgotPassword";
-            this.linkForgotPassword.Size = new System.Drawing.Size(75, 18);
-            this.linkForgotPassword.TabIndex = 10;
-            this.linkForgotPassword.TabStop = true;
-            this.linkForgotPassword.Text = "بازیابی رمز عبور";
-            this.linkForgotPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(342, 213);
+            this.label3.Name = "label3";
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label3.Size = new System.Drawing.Size(57, 18);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "کلمه عبور :";
             // 
-            // linkRegister
+            // label2
             // 
-            this.linkRegister.AutoSize = true;
-            this.linkRegister.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.linkRegister.Location = new System.Drawing.Point(162, 364);
-            this.linkRegister.Name = "linkRegister";
-            this.linkRegister.Size = new System.Drawing.Size(90, 18);
-            this.linkRegister.TabIndex = 11;
-            this.linkRegister.TabStop = true;
-            this.linkRegister.Text = "ساخت اکانت جدید";
-            this.linkRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkSignUp_LinkClicked);
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(342, 170);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.Size = new System.Drawing.Size(58, 18);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "نام کاربری :";
             // 
-            // panel3
+            // panel2
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.panel3.Location = new System.Drawing.Point(258, 364);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1, 20);
-            this.panel3.TabIndex = 12;
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.panel2.Location = new System.Drawing.Point(136, 120);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(3);
+            this.panel2.Size = new System.Drawing.Size(229, 1);
+            this.panel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Vazir FD-WOL", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(194, 96);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(126, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ورود به حساب کاربری";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Login
             // 
@@ -241,5 +265,7 @@
         private System.Windows.Forms.LinkLabel linkForgotPassword;
         private System.Windows.Forms.LinkLabel linkRegister;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label labelUsernameError;
+        private System.Windows.Forms.Label labelPasswordError;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace MCDMSolver.Forms
 {
-    partial class Due
+    partial class DashboardPage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelRecntProjects = new System.Windows.Forms.Panel();
+            this.btnRecently01 = new System.Windows.Forms.Button();
+            this.btnRecently02 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -42,53 +41,17 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
+            this.flowLayoutPanel1.Controls.Add(this.btnRecently01);
+            this.flowLayoutPanel1.Controls.Add(this.btnRecently02);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
+            this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1024, 175);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.WrapContents = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(197)))), ((int)(((byte)(47)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(835, 13);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(166, 140);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "الگوریتم ممد";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(197)))), ((int)(((byte)(47)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(663, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 140);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "الگوریتم احمد";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(197)))), ((int)(((byte)(47)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(491, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(166, 140);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "الگوریتم حامد(vip)";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel1
             // 
@@ -126,7 +89,39 @@
             this.panelRecntProjects.Size = new System.Drawing.Size(1018, 562);
             this.panelRecntProjects.TabIndex = 2;
             // 
-            // Due
+            // btnRecently01
+            // 
+            this.btnRecently01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(197)))), ((int)(((byte)(47)))));
+            this.btnRecently01.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRecently01.FlatAppearance.BorderSize = 0;
+            this.btnRecently01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecently01.Location = new System.Drawing.Point(835, 13);
+            this.btnRecently01.Name = "btnRecently01";
+            this.btnRecently01.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnRecently01.Size = new System.Drawing.Size(166, 140);
+            this.btnRecently01.TabIndex = 6;
+            this.btnRecently01.Text = "الگوریتم SAW";
+            this.btnRecently01.UseVisualStyleBackColor = false;
+            this.btnRecently01.MouseEnter += new System.EventHandler(this.btnRecently_MouseEnter);
+            this.btnRecently01.MouseLeave += new System.EventHandler(this.btnRecently_MouseLeave);
+            // 
+            // btnRecently02
+            // 
+            this.btnRecently02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(197)))), ((int)(((byte)(47)))));
+            this.btnRecently02.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRecently02.FlatAppearance.BorderSize = 0;
+            this.btnRecently02.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecently02.Location = new System.Drawing.Point(663, 13);
+            this.btnRecently02.Name = "btnRecently02";
+            this.btnRecently02.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnRecently02.Size = new System.Drawing.Size(166, 140);
+            this.btnRecently02.TabIndex = 7;
+            this.btnRecently02.Text = "الگوریتم Topsis";
+            this.btnRecently02.UseVisualStyleBackColor = false;
+            this.btnRecently02.MouseEnter += new System.EventHandler(this.btnRecently_MouseEnter);
+            this.btnRecently02.MouseLeave += new System.EventHandler(this.btnRecently_MouseLeave);
+            // 
+            // DashboardPage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1024, 768);
@@ -134,7 +129,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Due";
+            this.Name = "DashboardPage";
             this.Text = "Due";
             this.Load += new System.EventHandler(this.Due_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -147,11 +142,10 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelRecntProjects;
+        private System.Windows.Forms.Button btnRecently01;
+        private System.Windows.Forms.Button btnRecently02;
     }
 }

@@ -10,5 +10,6 @@ namespace MCDMSolver.Classes
     {
         public static string username { get; set; }
         public static string fullname { get; set; }
+        public static bool Logged { get; set; }
     }
 }

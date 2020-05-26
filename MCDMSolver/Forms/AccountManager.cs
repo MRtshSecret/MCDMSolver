@@ -20,14 +20,14 @@ namespace MCDMSolver.Forms
 
         private void AccountManager_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < 40; i++)
+            for (int i = 0; i < 2; i++)
             {
                 itemDescription Ides = new itemDescription();
                 Ides.Dock = DockStyle.Top;
                 //Ides.itemIcon = null;
-                Ides.itemName = "ممد";
-                Ides.itemMiniDescription = "ممد چاقه";
-                Ides.itemDescriptions = "همانطور ک گفته شد ممد چاقه";
+                Ides.itemName = "عنوان";
+                Ides.itemMiniDescription = "متن کوتاه";
+                Ides.itemDescriptions = "متن بلند و توضیحات درمورد آیتم";
                 Ides.itemPrice = "2,000,000";
                 itemsPanel.Controls.Add(Ides);
             }
