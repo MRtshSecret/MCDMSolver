@@ -95,6 +95,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1, 20);
             this.panel3.TabIndex = 12;
+            this.panel3.Visible = false;
             // 
             // linkRegister
             // 
@@ -107,6 +108,7 @@
             this.linkRegister.TabStop = true;
             this.linkRegister.Text = "ساخت اکانت جدید";
             this.linkRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkRegister.Visible = false;
             this.linkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkSignUp_LinkClicked);
             // 
             // linkForgotPassword
@@ -120,6 +122,7 @@
             this.linkForgotPassword.TabStop = true;
             this.linkForgotPassword.Text = "بازیابی رمز عبور";
             this.linkForgotPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkForgotPassword.Visible = false;
             // 
             // btnClose
             // 
@@ -146,6 +149,7 @@
             this.chbRememberMe.Text = "مرا بخاطر بسپار";
             this.chbRememberMe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chbRememberMe.UseVisualStyleBackColor = true;
+            this.chbRememberMe.Visible = false;
             // 
             // btnLogin
             // 
@@ -172,7 +176,6 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(203, 25);
             this.txtPassword.TabIndex = 5;
-            this.txtPassword.Text = "text";
             // 
             // txtUsername
             // 
@@ -184,7 +187,6 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(203, 25);
             this.txtUsername.TabIndex = 4;
-            this.txtUsername.Text = "text";
             // 
             // label3
             // 
