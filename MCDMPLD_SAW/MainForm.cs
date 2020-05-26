@@ -122,6 +122,7 @@ namespace MCDMPLD_SAW
             tabControl.SelectedTab.Enabled = false;
             var nextTab = tabControl.TabPages[tabControl.SelectedIndex + 1] as TabPage;
             nextTab.Enabled = true;
+            dataGridViewStep3.Columns[0].ReadOnly = true;
             tabControl.SelectedTab = nextTab;
         }
 
@@ -134,7 +135,7 @@ namespace MCDMPLD_SAW
                 return; // No more tabs to show!
 
             tabControl.SelectedTab.Enabled = false;
-            var nextTab = tabControl.TabPages[tabControl.SelectedIndex + 2] as TabPage;
+            var nextTab = tabControl.TabPages[tabControl.SelectedIndex + 1] as TabPage;
             nextTab.Enabled = true;
             tabControl.SelectedTab = nextTab;
         }
@@ -181,6 +182,30 @@ namespace MCDMPLD_SAW
             return dt;
         }
 
+        private void btnNextStep4_Click(object sender, EventArgs e)
+        {
+            //Disable Other Tabs
+            if (tabControl.TabCount - 1 == tabControl.SelectedIndex)
+                return; // No more tabs to show!
+
+            tabControl.SelectedTab.Enabled = false;
+            var nextTab = tabControl.TabPages[tabControl.SelectedIndex + 1] as TabPage;
+            nextTab.Enabled = true;
+            tabControl.SelectedTab = nextTab;
+        }
+
+        private void btnPreviousStep4_Click(object sender, EventArgs e)
+        {
+            dataGridViewStep4.DataSource = null;
+            //Disable Other Tabs
+            if (tabControl.TabCount - 1 == tabControl.SelectedIndex)
+                return; // No more tabs to show!
+
+            tabControl.SelectedTab.Enabled = false;
+            var nextTab = tabControl.TabPages[tabControl.SelectedIndex - 1] as TabPage;
+            nextTab.Enabled = true;
+            tabControl.SelectedTab = nextTab;
+        }
 
         public void Calculate_SAW(List<decimal> sign1, List<double> weight1, DataTable dt)
         {
@@ -300,7 +325,7 @@ namespace MCDMPLD_SAW
                 cellsFinal[i] = Sorts[i].ToString();                
             }
             Final.Rows.Add(cellsFinal);
-            dataGridView2.DataSource = Final;
+            dataGridViewStep4.DataSource = Final;
             //======================================================= END
 
 

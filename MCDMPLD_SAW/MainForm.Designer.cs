@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.button5 = new System.Windows.Forms.Button();
@@ -41,14 +37,9 @@
             this.labelResult = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnPreviousStep3 = new System.Windows.Forms.Button();
-            this.dataGridViewStep3 = new System.Windows.Forms.DataGridView();
             this.btnNextStep3 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -69,16 +60,22 @@
             this.btnNextStep1 = new System.Windows.Forms.Button();
             this.panelGeneratedColItems = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl = new System.Windows.Forms.TabControl();
+            this.dataGridViewStep3 = new System.Windows.Forms.DataGridView();
+            this.labelValueStep3 = new System.Windows.Forms.Label();
+            this.labelKeyStep3 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPreviousStep4 = new System.Windows.Forms.Button();
+            this.btnNextStep4 = new System.Windows.Forms.Button();
+            this.dataGridViewStep4 = new System.Windows.Forms.DataGridView();
+            this.labelValueStep4 = new System.Windows.Forms.Label();
+            this.labeKeyStep4 = new System.Windows.Forms.Label();
             this.tabPage5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.panelMiddlePage5.SuspendLayout();
             this.panelShowResult.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStep3)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -88,6 +85,9 @@
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStep3)).BeginInit();
+            this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStep4)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage5
@@ -178,7 +178,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(413, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 13);
+            this.label3.Size = new System.Drawing.Size(82, 18);
             this.label3.TabIndex = 1;
             this.label3.Text = "رتبه بندی حاصل:";
             // 
@@ -192,73 +192,6 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "مرحله چهارم";
             this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
-            this.tableLayoutPanel5.Controls.Add(this.button3, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.dataGridView2, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button4, 2, 1);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(988, 641);
-            this.tableLayoutPanel5.TabIndex = 1;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(876, 609);
-            this.button3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 29);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "مرحله قبلی";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel5.SetColumnSpan(this.dataGridView2, 3);
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(982, 600);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(10, 609);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(102, 29);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "مرحله بعدی";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
@@ -277,15 +210,19 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
-            this.tableLayoutPanel4.Controls.Add(this.btnPreviousStep3, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.dataGridViewStep3, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnNextStep3, 2, 1);
+            this.tableLayoutPanel4.Controls.Add(this.btnPreviousStep3, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.btnNextStep3, 2, 2);
+            this.tableLayoutPanel4.Controls.Add(this.dataGridViewStep3, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.labelValueStep3, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.labelKeyStep3, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(988, 641);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
@@ -300,34 +237,6 @@
             this.btnPreviousStep3.Text = "مرحله قبلی";
             this.btnPreviousStep3.UseVisualStyleBackColor = true;
             this.btnPreviousStep3.Click += new System.EventHandler(this.btnPreviousStep3_Click);
-            // 
-            // dataGridViewStep3
-            // 
-            this.dataGridViewStep3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewStep3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewStep3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel4.SetColumnSpan(this.dataGridViewStep3, 3);
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewStep3.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewStep3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewStep3.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewStep3.Name = "dataGridViewStep3";
-            this.dataGridViewStep3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridViewStep3.Size = new System.Drawing.Size(982, 600);
-            this.dataGridViewStep3.TabIndex = 1;
             // 
             // btnNextStep3
             // 
@@ -408,7 +317,7 @@
             this.cbbRows.Location = new System.Drawing.Point(3, 79);
             this.cbbRows.Name = "cbbRows";
             this.cbbRows.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbbRows.Size = new System.Drawing.Size(182, 21);
+            this.cbbRows.Size = new System.Drawing.Size(182, 26);
             this.cbbRows.TabIndex = 1;
             this.cbbRows.TabStop = false;
             // 
@@ -419,7 +328,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Location = new System.Drawing.Point(106, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 13);
+            this.label2.Size = new System.Drawing.Size(75, 18);
             this.label2.TabIndex = 0;
             this.label2.Text = "تعداد ردیف ها:";
             // 
@@ -529,7 +438,7 @@
             this.cbbColumns.Location = new System.Drawing.Point(3, 79);
             this.cbbColumns.Name = "cbbColumns";
             this.cbbColumns.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbbColumns.Size = new System.Drawing.Size(182, 21);
+            this.cbbColumns.Size = new System.Drawing.Size(182, 26);
             this.cbbColumns.TabIndex = 1;
             this.cbbColumns.TabStop = false;
             // 
@@ -540,7 +449,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Location = new System.Drawing.Point(106, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.Size = new System.Drawing.Size(78, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "تعداد ستون ها:";
             // 
@@ -603,12 +512,126 @@
             this.tabControl.TabIndex = 0;
             this.tabControl.TabStop = false;
             // 
+            // dataGridViewStep3
+            // 
+            this.dataGridViewStep3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.tableLayoutPanel4.SetColumnSpan(this.dataGridViewStep3, 3);
+            this.dataGridViewStep3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewStep3.Location = new System.Drawing.Point(3, 38);
+            this.dataGridViewStep3.Name = "dataGridViewStep3";
+            this.dataGridViewStep3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridViewStep3.Size = new System.Drawing.Size(982, 565);
+            this.dataGridViewStep3.TabIndex = 4;
+            // 
+            // labelValueStep3
+            // 
+            this.labelValueStep3.AutoSize = true;
+            this.labelValueStep3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelValueStep3.Location = new System.Drawing.Point(118, 0);
+            this.labelValueStep3.Name = "labelValueStep3";
+            this.labelValueStep3.Size = new System.Drawing.Size(752, 35);
+            this.labelValueStep3.TabIndex = 5;
+            this.labelValueStep3.Text = "متن مورد نظر";
+            this.labelValueStep3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelKeyStep3
+            // 
+            this.labelKeyStep3.AutoSize = true;
+            this.labelKeyStep3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelKeyStep3.Location = new System.Drawing.Point(876, 0);
+            this.labelKeyStep3.Name = "labelKeyStep3";
+            this.labelKeyStep3.Size = new System.Drawing.Size(109, 35);
+            this.labelKeyStep3.TabIndex = 6;
+            this.labelKeyStep3.Text = "مرحله اول:";
+            this.labelKeyStep3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 3;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel5.Controls.Add(this.btnPreviousStep4, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.btnNextStep4, 2, 2);
+            this.tableLayoutPanel5.Controls.Add(this.dataGridViewStep4, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.labelValueStep4, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.labeKeyStep4, 0, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 3;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(988, 641);
+            this.tableLayoutPanel5.TabIndex = 2;
+            // 
+            // btnPreviousStep4
+            // 
+            this.btnPreviousStep4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPreviousStep4.Location = new System.Drawing.Point(876, 609);
+            this.btnPreviousStep4.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.btnPreviousStep4.Name = "btnPreviousStep4";
+            this.btnPreviousStep4.Size = new System.Drawing.Size(102, 29);
+            this.btnPreviousStep4.TabIndex = 3;
+            this.btnPreviousStep4.Text = "مرحله قبلی";
+            this.btnPreviousStep4.UseVisualStyleBackColor = true;
+            this.btnPreviousStep4.Click += new System.EventHandler(this.btnPreviousStep4_Click);
+            // 
+            // btnNextStep4
+            // 
+            this.btnNextStep4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnNextStep4.Location = new System.Drawing.Point(10, 609);
+            this.btnNextStep4.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.btnNextStep4.Name = "btnNextStep4";
+            this.btnNextStep4.Size = new System.Drawing.Size(102, 29);
+            this.btnNextStep4.TabIndex = 2;
+            this.btnNextStep4.Text = "مرحله بعدی";
+            this.btnNextStep4.UseVisualStyleBackColor = true;
+            this.btnNextStep4.Click += new System.EventHandler(this.btnNextStep4_Click);
+            // 
+            // dataGridViewStep4
+            // 
+            this.dataGridViewStep4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewStep4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel5.SetColumnSpan(this.dataGridViewStep4, 3);
+            this.dataGridViewStep4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewStep4.Location = new System.Drawing.Point(3, 38);
+            this.dataGridViewStep4.Name = "dataGridViewStep4";
+            this.dataGridViewStep4.ReadOnly = true;
+            this.dataGridViewStep4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridViewStep4.Size = new System.Drawing.Size(982, 565);
+            this.dataGridViewStep4.TabIndex = 4;
+            // 
+            // labelValueStep4
+            // 
+            this.labelValueStep4.AutoSize = true;
+            this.labelValueStep4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelValueStep4.Location = new System.Drawing.Point(118, 0);
+            this.labelValueStep4.Name = "labelValueStep4";
+            this.labelValueStep4.Size = new System.Drawing.Size(752, 35);
+            this.labelValueStep4.TabIndex = 5;
+            this.labelValueStep4.Text = "متن مورد نظر";
+            this.labelValueStep4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labeKeyStep4
+            // 
+            this.labeKeyStep4.AutoSize = true;
+            this.labeKeyStep4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labeKeyStep4.Location = new System.Drawing.Point(876, 0);
+            this.labeKeyStep4.Name = "labeKeyStep4";
+            this.labeKeyStep4.Size = new System.Drawing.Size(109, 35);
+            this.labeKeyStep4.TabIndex = 6;
+            this.labeKeyStep4.Text = "مرحله اول:";
+            this.labeKeyStep4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1002, 680);
             this.Controls.Add(this.tabControl);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Font = new System.Drawing.Font("Vazir", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(1002, 680);
             this.Name = "MainForm";
@@ -621,11 +644,9 @@
             this.panelMiddlePage5.PerformLayout();
             this.panelShowResult.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStep3)).EndInit();
+            this.tableLayoutPanel4.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -637,6 +658,10 @@
             this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStep3)).EndInit();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStep4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -652,14 +677,9 @@
         private System.Windows.Forms.Label labelResult;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Button btnPreviousStep3;
-        private System.Windows.Forms.DataGridView dataGridViewStep3;
         private System.Windows.Forms.Button btnNextStep3;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
@@ -680,6 +700,15 @@
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.Button btnSubmitCols;
         private System.Windows.Forms.Button btnSubmitRows;
+        private System.Windows.Forms.DataGridView dataGridViewStep3;
+        private System.Windows.Forms.Label labelValueStep3;
+        private System.Windows.Forms.Label labelKeyStep3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Button btnPreviousStep4;
+        private System.Windows.Forms.Button btnNextStep4;
+        private System.Windows.Forms.DataGridView dataGridViewStep4;
+        private System.Windows.Forms.Label labelValueStep4;
+        private System.Windows.Forms.Label labeKeyStep4;
     }
 }
 
