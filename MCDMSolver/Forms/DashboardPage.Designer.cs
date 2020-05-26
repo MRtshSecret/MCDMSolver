@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnRecently01 = new System.Windows.Forms.Button();
+            this.btnRecently02 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelRecntProjects = new System.Windows.Forms.Panel();
-            this.btnRecently01 = new System.Windows.Forms.Button();
-            this.btnRecently02 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,38 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1024, 175);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.WrapContents = false;
+            // 
+            // btnRecently01
+            // 
+            this.btnRecently01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(197)))), ((int)(((byte)(47)))));
+            this.btnRecently01.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRecently01.FlatAppearance.BorderSize = 0;
+            this.btnRecently01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecently01.Location = new System.Drawing.Point(835, 13);
+            this.btnRecently01.Name = "btnRecently01";
+            this.btnRecently01.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnRecently01.Size = new System.Drawing.Size(166, 140);
+            this.btnRecently01.TabIndex = 6;
+            this.btnRecently01.Text = "الگوریتم SAW";
+            this.btnRecently01.UseVisualStyleBackColor = false;
+            this.btnRecently01.MouseEnter += new System.EventHandler(this.btnRecently_MouseEnter);
+            this.btnRecently01.MouseLeave += new System.EventHandler(this.btnRecently_MouseLeave);
+            // 
+            // btnRecently02
+            // 
+            this.btnRecently02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(197)))), ((int)(((byte)(47)))));
+            this.btnRecently02.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRecently02.FlatAppearance.BorderSize = 0;
+            this.btnRecently02.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecently02.Location = new System.Drawing.Point(663, 13);
+            this.btnRecently02.Name = "btnRecently02";
+            this.btnRecently02.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnRecently02.Size = new System.Drawing.Size(166, 140);
+            this.btnRecently02.TabIndex = 7;
+            this.btnRecently02.Text = "الگوریتم Topsis";
+            this.btnRecently02.UseVisualStyleBackColor = false;
+            this.btnRecently02.MouseEnter += new System.EventHandler(this.btnRecently_MouseEnter);
+            this.btnRecently02.MouseLeave += new System.EventHandler(this.btnRecently_MouseLeave);
             // 
             // tableLayoutPanel1
             // 
@@ -88,38 +120,6 @@
             this.panelRecntProjects.Name = "panelRecntProjects";
             this.panelRecntProjects.Size = new System.Drawing.Size(1018, 562);
             this.panelRecntProjects.TabIndex = 2;
-            // 
-            // btnRecently01
-            // 
-            this.btnRecently01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(197)))), ((int)(((byte)(47)))));
-            this.btnRecently01.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRecently01.FlatAppearance.BorderSize = 0;
-            this.btnRecently01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecently01.Location = new System.Drawing.Point(835, 13);
-            this.btnRecently01.Name = "btnRecently01";
-            this.btnRecently01.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRecently01.Size = new System.Drawing.Size(166, 140);
-            this.btnRecently01.TabIndex = 6;
-            this.btnRecently01.Text = "الگوریتم SAW";
-            this.btnRecently01.UseVisualStyleBackColor = false;
-            this.btnRecently01.MouseEnter += new System.EventHandler(this.btnRecently_MouseEnter);
-            this.btnRecently01.MouseLeave += new System.EventHandler(this.btnRecently_MouseLeave);
-            // 
-            // btnRecently02
-            // 
-            this.btnRecently02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(197)))), ((int)(((byte)(47)))));
-            this.btnRecently02.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRecently02.FlatAppearance.BorderSize = 0;
-            this.btnRecently02.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecently02.Location = new System.Drawing.Point(663, 13);
-            this.btnRecently02.Name = "btnRecently02";
-            this.btnRecently02.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRecently02.Size = new System.Drawing.Size(166, 140);
-            this.btnRecently02.TabIndex = 7;
-            this.btnRecently02.Text = "الگوریتم Topsis";
-            this.btnRecently02.UseVisualStyleBackColor = false;
-            this.btnRecently02.MouseEnter += new System.EventHandler(this.btnRecently_MouseEnter);
-            this.btnRecently02.MouseLeave += new System.EventHandler(this.btnRecently_MouseLeave);
             // 
             // DashboardPage
             // 

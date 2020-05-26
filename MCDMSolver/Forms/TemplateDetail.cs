@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MCDMPLD_SAW;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace MCDMSolver.Forms
 {
     public partial class TemplateDetail : Form
     {
-        public TemplateDetail()
+        public string AlgorithmName { get; set; }
+        public TemplateDetail(string type)
         {
             InitializeComponent();
+            AlgorithmName = type;
         }
 
         private void lablClose_Click(object sender, EventArgs e)
@@ -30,6 +33,14 @@ namespace MCDMSolver.Forms
         private void btnCreate_Click(object sender, EventArgs e)
         {
             Classes.MainFormCaller.mainFormCallerVortex.openChildForm(new Forms.MainAlgorithm());
+            switch (AlgorithmName)
+            {
+                case "SAW":
+                    Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex.openChildForm(new PLGSAWMain());
+                    break;
+                case "Topsis":
+                    break;
+            }
             this.Close();
         }
     }

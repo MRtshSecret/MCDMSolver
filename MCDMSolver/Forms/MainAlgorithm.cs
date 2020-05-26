@@ -35,6 +35,22 @@ namespace MCDMSolver.Forms
         }
         #endregion
 
+
+        private Form activeForm = null;
+        public void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnlPluginLoader.Controls.Add(childForm);
+            pnlPluginLoader.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         private void iconHome_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\MainAlgorithmCaller.cs" />
     <Compile Include="Classes\MainFormCaller.cs" />
     <Compile Include="Classes\User.cs" />
     <Compile Include="Forms\AccountManager.cs">

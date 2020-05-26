@@ -15,6 +15,7 @@ namespace MCDMSolver.UserControls
     {
         public string Details { get; set; }
         public Image algorythmImage { set; get; }
+        public string AlgorithmName { get; set; }
 
         public Templates()
         {
@@ -23,9 +24,14 @@ namespace MCDMSolver.UserControls
 
         private void openDetails(object sender, EventArgs e)
         {
-            algorythmImage = Image.FromFile(Directory.GetCurrentDirectory() + "\\Resource\\directional.png");
-            Forms.TemplateDetail algorithm = new Forms.TemplateDetail();
-            algorithm.ShowDialog();
+            switch (AlgorithmName)
+            {
+                case "SAW":
+                    Forms.TemplateDetail algorithm = new Forms.TemplateDetail("SAW");
+                    algorythmImage = Image.FromFile(Directory.GetCurrentDirectory() + "\\Resource\\directional.png");
+                    algorithm.ShowDialog();
+                    break;
+            }
         }
     }
 }
