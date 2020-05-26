@@ -1,4 +1,5 @@
 ﻿using MCDMPLD_SAW;
+using MCDMSolver.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,11 +33,16 @@ namespace MCDMSolver.Forms
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            Classes.MainFormCaller.mainFormCallerVortex.openChildForm(new Forms.MainAlgorithm());
+            //Classes.MainFormCaller.mainFormCallerVortex.openChildForm(mAlgorithm);
             switch (AlgorithmName)
             {
                 case "SAW":
+                    MainAlgorithm mAlgorithm = new MainAlgorithm(AlgorithmName);
+                    Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex = mAlgorithm;
                     Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex.openChildForm(new PLGSAWMain());
+                    Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex.Show();
+                    this.Close();
+                    Classes.MainFormCaller.mainFormCallerVortex.Hide();
                     break;
                 case "Topsis":
                     break;

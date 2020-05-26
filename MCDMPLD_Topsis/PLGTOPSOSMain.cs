@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MCDMPLD_VikorOghlidosi
+namespace MCDMPLD_Topsis
 {
-    public partial class Form1 : Form
+    public partial class PLGTOPSOSMain : Form
     {
-        public Form1()
+        public PLGTOPSOSMain()
         {
             InitializeComponent();
         }

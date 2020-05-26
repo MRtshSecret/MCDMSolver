@@ -33,7 +33,7 @@
             this.toolbarPanel = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAlgorithmName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -70,7 +70,7 @@
             // 
             this.toolbarPanel.Controls.Add(this.textBox3);
             this.toolbarPanel.Controls.Add(this.textBox2);
-            this.toolbarPanel.Controls.Add(this.textBox1);
+            this.toolbarPanel.Controls.Add(this.txtAlgorithmName);
             this.toolbarPanel.Controls.Add(this.label5);
             this.toolbarPanel.Controls.Add(this.label3);
             this.toolbarPanel.Controls.Add(this.tableLayoutPanel3);
@@ -85,6 +85,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.BackColor = System.Drawing.SystemColors.Control;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Location = new System.Drawing.Point(832, 49);
@@ -95,6 +96,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.BackColor = System.Drawing.SystemColors.Control;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Location = new System.Drawing.Point(673, 13);
@@ -104,16 +106,19 @@
             this.textBox2.Text = "فایل شماره یک";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox1
+            // txtAlgorithmName
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(386, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 18);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "SAW";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAlgorithmName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAlgorithmName.BackColor = System.Drawing.SystemColors.Control;
+            this.txtAlgorithmName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAlgorithmName.Location = new System.Drawing.Point(386, 28);
+            this.txtAlgorithmName.Name = "txtAlgorithmName";
+            this.txtAlgorithmName.Size = new System.Drawing.Size(258, 18);
+            this.txtAlgorithmName.TabIndex = 0;
+            this.txtAlgorithmName.Text = "SAW";
+            this.txtAlgorithmName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -235,6 +240,7 @@
             this.Name = "MainAlgorithm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MainAlgorithm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.toolbarPanel.ResumeLayout(false);
             this.toolbarPanel.PerformLayout();
@@ -260,7 +266,7 @@
         private System.Windows.Forms.Label labelHistory;
         private System.Windows.Forms.PictureBox iconHistory;
         private System.Windows.Forms.Panel pnlPluginLoader;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAlgorithmName;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
     }

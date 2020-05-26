@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MCDMSolver.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,13 @@ namespace MCDMSolver.Forms
 {
     public partial class MainAlgorithm : Form
     {
-        public MainAlgorithm()
+        public string AlgorithmName { get; set; }
+        public MainAlgorithm(string AlgName)
         {
             InitializeComponent();
+            AlgorithmName = AlgName;
         }
+
         #region Move Window
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -36,6 +40,11 @@ namespace MCDMSolver.Forms
         #endregion
 
 
+        private void MainAlgorithm_Load(object sender, EventArgs e)
+        {
+            txtAlgorithmName.Text = AlgorithmName;
+        }
+
         private Form activeForm = null;
         public void openChildForm(Form childForm)
         {
@@ -54,6 +63,7 @@ namespace MCDMSolver.Forms
         private void iconHome_Click(object sender, EventArgs e)
         {
             this.Close();
+            MainFormCaller.mainFormCallerVortex.Show();
         }
     }
 }

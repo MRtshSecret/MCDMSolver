@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCDMSolver", "MCDMSolver\MC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCDMPLD_SAW", "MCDMPLD_SAW\MCDMPLD_SAW.csproj", "{B14FAE29-7574-4455-80CF-AA2BD72840EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCDMPLD_Topsis", "MCDMPLD_Topsis\MCDMPLD_Topsis.csproj", "{E361CCA1-D6ED-429E-8B7F-0E3811073E9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B14FAE29-7574-4455-80CF-AA2BD72840EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B14FAE29-7574-4455-80CF-AA2BD72840EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B14FAE29-7574-4455-80CF-AA2BD72840EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E361CCA1-D6ED-429E-8B7F-0E3811073E9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E361CCA1-D6ED-429E-8B7F-0E3811073E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E361CCA1-D6ED-429E-8B7F-0E3811073E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E361CCA1-D6ED-429E-8B7F-0E3811073E9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
