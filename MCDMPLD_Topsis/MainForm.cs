@@ -1,17 +1,14 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MCDMPLD_SAW
+namespace MCDMPLD_Topsis
 {
     public partial class MainForm : Form
     {
@@ -297,7 +294,7 @@ namespace MCDMPLD_SAW
 
             for (int i = 0; i < RowNames.Count; i++)
             {
-                cellsFinal[i] = Sorts[i].ToString();                
+                cellsFinal[i] = Sorts[i].ToString();
             }
             Final.Rows.Add(cellsFinal);
             dataGridView2.DataSource = Final;
