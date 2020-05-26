@@ -262,6 +262,10 @@
       <Project>{b14fae29-7574-4455-80cf-aa2bd72840eb}</Project>
       <Name>MCDMPLD_SAW</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MCDMPLD_Topsis\MCDMPLD_Topsis.csproj">
+      <Project>{e361cca1-d6ed-429e-8b7f-0e3811073e9a}</Project>
+      <Name>MCDMPLD_Topsis</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

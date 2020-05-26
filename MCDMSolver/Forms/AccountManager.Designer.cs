@@ -71,11 +71,11 @@
             this.cbbSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbSort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbSort.Font = new System.Drawing.Font("A Iranian Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.cbbSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.cbbSort.FormattingEnabled = true;
             this.cbbSort.Location = new System.Drawing.Point(3, 62);
             this.cbbSort.Name = "cbbSort";
-            this.cbbSort.Size = new System.Drawing.Size(206, 22);
+            this.cbbSort.Size = new System.Drawing.Size(206, 23);
             this.cbbSort.TabIndex = 7;
             // 
             // btnPrivacySettings
@@ -87,6 +87,7 @@
             this.btnPrivacySettings.TabIndex = 6;
             this.btnPrivacySettings.Text = "ورود به تنظیمات";
             this.btnPrivacySettings.UseVisualStyleBackColor = true;
+            this.btnPrivacySettings.Visible = false;
             // 
             // label2
             // 
@@ -98,6 +99,7 @@
             this.label2.Size = new System.Drawing.Size(113, 18);
             this.label2.TabIndex = 5;
             this.label2.Text = "تنظیمات امنیتی حساب:";
+            this.label2.Visible = false;
             // 
             // label1
             // 

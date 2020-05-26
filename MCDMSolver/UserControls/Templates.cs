@@ -24,10 +24,15 @@ namespace MCDMSolver.UserControls
 
         private void openDetails(object sender, EventArgs e)
         {
+            Forms.TemplateDetail algorithm = new Forms.TemplateDetail(AlgorithmName);
             switch (AlgorithmName)
             {
+
                 case "SAW":
-                    Forms.TemplateDetail algorithm = new Forms.TemplateDetail("SAW");
+                    algorythmImage = Image.FromFile(Directory.GetCurrentDirectory() + "\\Resource\\directional.png");
+                    algorithm.ShowDialog();
+                    break;
+                case "Topsis":
                     algorythmImage = Image.FromFile(Directory.GetCurrentDirectory() + "\\Resource\\directional.png");
                     algorithm.ShowDialog();
                     break;

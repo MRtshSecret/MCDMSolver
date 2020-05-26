@@ -1,4 +1,5 @@
 ﻿using MCDMPLD_SAW;
+using MCDMPLD_Topsis;
 using MCDMSolver.Classes;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,8 @@ namespace MCDMSolver.Forms
         {
             InitializeComponent();
             AlgorithmName = type;
+            string onvan = "الگوریتم : " + AlgorithmName;
+            label1.Text = onvan;
         }
 
         private void lablClose_Click(object sender, EventArgs e)
@@ -34,17 +37,23 @@ namespace MCDMSolver.Forms
         private void btnCreate_Click(object sender, EventArgs e)
         {
             //Classes.MainFormCaller.mainFormCallerVortex.openChildForm(mAlgorithm);
+            MainAlgorithm mAlgorithm = new MainAlgorithm(AlgorithmName);
+            Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex = mAlgorithm;
+
             switch (AlgorithmName)
             {
                 case "SAW":
-                    MainAlgorithm mAlgorithm = new MainAlgorithm(AlgorithmName);
-                    Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex = mAlgorithm;
-                    Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex.openChildForm(new PLGSAWMain());
+                     Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex.openChildForm(new PLGSAWMain());
                     Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex.Show();
                     this.Close();
                     Classes.MainFormCaller.mainFormCallerVortex.Hide();
                     break;
                 case "Topsis":
+                    
+                    Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex.openChildForm(new PLGTOPSOSMain());
+                    Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex.Show();
+                    this.Close();
+                    Classes.MainFormCaller.mainFormCallerVortex.Hide();
                     break;
             }
             this.Close();
