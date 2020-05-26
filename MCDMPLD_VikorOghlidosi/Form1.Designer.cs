@@ -95,7 +95,7 @@
             this.tabControl.Controls.Add(this.tabPage4);
             this.tabControl.Controls.Add(this.tabPage5);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F);
+            this.tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.tabControl.ItemSize = new System.Drawing.Size(75, 25);
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Multiline = true;
@@ -173,7 +173,7 @@
             this.cbbColumns.Location = new System.Drawing.Point(3, 79);
             this.cbbColumns.Name = "cbbColumns";
             this.cbbColumns.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbbColumns.Size = new System.Drawing.Size(182, 26);
+            this.cbbColumns.Size = new System.Drawing.Size(182, 21);
             this.cbbColumns.TabIndex = 1;
             this.cbbColumns.TabStop = false;
             // 
@@ -184,7 +184,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Location = new System.Drawing.Point(105, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 18);
+            this.label1.Size = new System.Drawing.Size(76, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "تعداد ستون ها:";
             // 
@@ -232,7 +232,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(978, 608);
+            this.tabPage2.Size = new System.Drawing.Size(994, 647);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "مرحله دوم";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -250,7 +250,7 @@
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 586F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(972, 602);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(988, 641);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // panel2
@@ -259,15 +259,15 @@
             this.panel2.Controls.Add(this.cbbRows);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(781, 3);
+            this.panel2.Location = new System.Drawing.Point(794, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(188, 596);
+            this.panel2.Size = new System.Drawing.Size(191, 635);
             this.panel2.TabIndex = 2;
             // 
             // btnSubmitRows
             // 
             this.btnSubmitRows.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSubmitRows.Location = new System.Drawing.Point(60, 131);
+            this.btnSubmitRows.Location = new System.Drawing.Point(63, 131);
             this.btnSubmitRows.Name = "btnSubmitRows";
             this.btnSubmitRows.Size = new System.Drawing.Size(75, 23);
             this.btnSubmitRows.TabIndex = 3;
@@ -289,10 +289,10 @@
             "7",
             "8",
             "9"});
-            this.cbbRows.Location = new System.Drawing.Point(0, 79);
+            this.cbbRows.Location = new System.Drawing.Point(3, 79);
             this.cbbRows.Name = "cbbRows";
             this.cbbRows.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbbRows.Size = new System.Drawing.Size(182, 26);
+            this.cbbRows.Size = new System.Drawing.Size(182, 21);
             this.cbbRows.TabIndex = 1;
             this.cbbRows.TabStop = false;
             // 
@@ -301,9 +301,9 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Location = new System.Drawing.Point(102, 50);
+            this.label2.Location = new System.Drawing.Point(105, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 18);
+            this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "تعداد ردیف ها:";
             // 
@@ -319,13 +319,13 @@
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(772, 596);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(785, 635);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // btnNextStep2
             // 
             this.btnNextStep2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnNextStep2.Location = new System.Drawing.Point(10, 559);
+            this.btnNextStep2.Location = new System.Drawing.Point(10, 598);
             this.btnNextStep2.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.btnNextStep2.Name = "btnNextStep2";
             this.btnNextStep2.Size = new System.Drawing.Size(75, 34);
@@ -341,7 +341,7 @@
             this.panelGenerateRowItems.Location = new System.Drawing.Point(3, 3);
             this.panelGenerateRowItems.Name = "panelGenerateRowItems";
             this.panelGenerateRowItems.Padding = new System.Windows.Forms.Padding(25, 10, 25, 10);
-            this.panelGenerateRowItems.Size = new System.Drawing.Size(766, 550);
+            this.panelGenerateRowItems.Size = new System.Drawing.Size(779, 589);
             this.panelGenerateRowItems.TabIndex = 5001;
             this.panelGenerateRowItems.WrapContents = false;
             // 
@@ -351,7 +351,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(978, 608);
+            this.tabPage3.Size = new System.Drawing.Size(994, 647);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "مرحله سوم";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -371,13 +371,13 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(972, 602);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(988, 641);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // btnPreviousStep3
             // 
             this.btnPreviousStep3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPreviousStep3.Location = new System.Drawing.Point(860, 570);
+            this.btnPreviousStep3.Location = new System.Drawing.Point(876, 609);
             this.btnPreviousStep3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.btnPreviousStep3.Name = "btnPreviousStep3";
             this.btnPreviousStep3.Size = new System.Drawing.Size(102, 29);
@@ -387,19 +387,20 @@
             // 
             // dataGridViewStep3
             // 
+            this.dataGridViewStep3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewStep3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel4.SetColumnSpan(this.dataGridViewStep3, 3);
             this.dataGridViewStep3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewStep3.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewStep3.Name = "dataGridViewStep3";
             this.dataGridViewStep3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridViewStep3.Size = new System.Drawing.Size(966, 561);
+            this.dataGridViewStep3.Size = new System.Drawing.Size(982, 600);
             this.dataGridViewStep3.TabIndex = 1;
             // 
             // btnNextStep3
             // 
             this.btnNextStep3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnNextStep3.Location = new System.Drawing.Point(10, 570);
+            this.btnNextStep3.Location = new System.Drawing.Point(10, 609);
             this.btnNextStep3.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.btnNextStep3.Name = "btnNextStep3";
             this.btnNextStep3.Size = new System.Drawing.Size(102, 29);
@@ -413,7 +414,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(978, 608);
+            this.tabPage4.Size = new System.Drawing.Size(994, 647);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "مرحله چهارم";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -433,13 +434,13 @@
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(972, 602);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(988, 641);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(860, 570);
+            this.button3.Location = new System.Drawing.Point(876, 609);
             this.button3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(102, 29);
@@ -455,13 +456,13 @@
             this.dataGridView2.Location = new System.Drawing.Point(3, 3);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(966, 561);
+            this.dataGridView2.Size = new System.Drawing.Size(982, 600);
             this.dataGridView2.TabIndex = 1;
             // 
             // button4
             // 
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(10, 570);
+            this.button4.Location = new System.Drawing.Point(10, 609);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(102, 29);
@@ -475,7 +476,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(978, 608);
+            this.tabPage5.Size = new System.Drawing.Size(994, 647);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "مرحله پنجم";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -495,13 +496,13 @@
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(972, 602);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(988, 641);
             this.tableLayoutPanel6.TabIndex = 2;
             // 
             // button5
             // 
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Location = new System.Drawing.Point(860, 570);
+            this.button5.Location = new System.Drawing.Point(876, 609);
             this.button5.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(102, 29);
@@ -512,7 +513,7 @@
             // button6
             // 
             this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.Location = new System.Drawing.Point(10, 570);
+            this.button6.Location = new System.Drawing.Point(10, 609);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(102, 29);
@@ -528,14 +529,14 @@
             this.panelMiddlePage5.Location = new System.Drawing.Point(118, 3);
             this.panelMiddlePage5.Name = "panelMiddlePage5";
             this.panelMiddlePage5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.panelMiddlePage5.Size = new System.Drawing.Size(736, 561);
+            this.panelMiddlePage5.Size = new System.Drawing.Size(752, 600);
             this.panelMiddlePage5.TabIndex = 4;
             // 
             // panelShowResult
             // 
             this.panelShowResult.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelShowResult.Controls.Add(this.labelResult);
-            this.panelShowResult.Location = new System.Drawing.Point(267, 42);
+            this.panelShowResult.Location = new System.Drawing.Point(283, 42);
             this.panelShowResult.Name = "panelShowResult";
             this.panelShowResult.Padding = new System.Windows.Forms.Padding(10);
             this.panelShowResult.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -555,9 +556,9 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(397, 21);
+            this.label3.Location = new System.Drawing.Point(413, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 18);
+            this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "رتبه بندی حاصل:";
             // 
@@ -566,7 +567,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1002, 680);
             this.Controls.Add(this.tabControl);
-            this.Font = new System.Drawing.Font("A Iranian Sans", 8.25F);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
