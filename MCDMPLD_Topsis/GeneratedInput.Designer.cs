@@ -1,4 +1,4 @@
-﻿namespace MCDMPLD_SAW
+﻿namespace MCDMPLD_Topsis
 {
     partial class GeneratedInput
     {

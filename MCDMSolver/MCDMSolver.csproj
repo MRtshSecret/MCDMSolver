@@ -231,6 +231,8 @@
     <Content Include="Dll\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll" />
     <Content Include="Dll\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll" />
     <Content Include="Dll\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll" />
+    <Content Include="Dll\NewtonSoft Json\Newtonsoft.Json.dll" />
+    <Content Include="Dll\NewtonSoft Json\Newtonsoft.Json.xml" />
     <Content Include="Dll\PersianMaterialSkin.2.0.3\lib\net45\MaterialSkin.dll" />
     <Content Include="Resource\directional.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

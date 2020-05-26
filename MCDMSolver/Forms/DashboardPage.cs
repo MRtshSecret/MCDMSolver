@@ -20,7 +20,6 @@ namespace MCDMSolver.Forms
         
         private void loadRecents()
         {
-
             for (int i = 0; i < 2; i++)
             {
                 UserControls.userControlRecentlyProjects recentProjects = new UserControls.userControlRecentlyProjects();
