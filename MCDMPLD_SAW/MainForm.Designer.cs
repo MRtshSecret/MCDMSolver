@@ -1,6 +1,6 @@
 ﻿namespace MCDMPLD_SAW
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -49,6 +49,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSubmitRows = new System.Windows.Forms.Button();
             this.cbbRows = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -57,14 +58,13 @@
             this.Step1Page = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSubmitCols = new System.Windows.Forms.Button();
             this.cbbColumns = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnNextStep1 = new System.Windows.Forms.Button();
             this.panelGeneratedColItems = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl = new System.Windows.Forms.TabControl();
-            this.btnSubmitCols = new System.Windows.Forms.Button();
-            this.btnSubmitRows = new System.Windows.Forms.Button();
             this.tabPage5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.panelMiddlePage5.SuspendLayout();
@@ -174,7 +174,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(413, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 18);
+            this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "رتبه بندی حاصل:";
             // 
@@ -283,6 +283,7 @@
             // 
             // dataGridViewStep3
             // 
+            this.dataGridViewStep3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewStep3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel4.SetColumnSpan(this.dataGridViewStep3, 3);
             this.dataGridViewStep3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -342,6 +343,17 @@
             this.panel2.Size = new System.Drawing.Size(191, 635);
             this.panel2.TabIndex = 2;
             // 
+            // btnSubmitRows
+            // 
+            this.btnSubmitRows.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSubmitRows.Location = new System.Drawing.Point(63, 131);
+            this.btnSubmitRows.Name = "btnSubmitRows";
+            this.btnSubmitRows.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmitRows.TabIndex = 3;
+            this.btnSubmitRows.Text = "تایید";
+            this.btnSubmitRows.UseVisualStyleBackColor = true;
+            this.btnSubmitRows.Click += new System.EventHandler(this.btnSubmitRows_Click);
+            // 
             // cbbRows
             // 
             this.cbbRows.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -360,7 +372,7 @@
             this.cbbRows.Location = new System.Drawing.Point(3, 79);
             this.cbbRows.Name = "cbbRows";
             this.cbbRows.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbbRows.Size = new System.Drawing.Size(182, 26);
+            this.cbbRows.Size = new System.Drawing.Size(182, 21);
             this.cbbRows.TabIndex = 1;
             this.cbbRows.TabStop = false;
             // 
@@ -371,7 +383,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Location = new System.Drawing.Point(106, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 18);
+            this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "تعداد ردیف ها:";
             // 
@@ -452,6 +464,17 @@
             this.panel1.Size = new System.Drawing.Size(191, 635);
             this.panel1.TabIndex = 0;
             // 
+            // btnSubmitCols
+            // 
+            this.btnSubmitCols.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSubmitCols.Location = new System.Drawing.Point(63, 131);
+            this.btnSubmitCols.Name = "btnSubmitCols";
+            this.btnSubmitCols.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmitCols.TabIndex = 2;
+            this.btnSubmitCols.Text = "تایید";
+            this.btnSubmitCols.UseVisualStyleBackColor = true;
+            this.btnSubmitCols.Click += new System.EventHandler(this.btnSubmitCols_Click);
+            // 
             // cbbColumns
             // 
             this.cbbColumns.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -470,7 +493,7 @@
             this.cbbColumns.Location = new System.Drawing.Point(3, 79);
             this.cbbColumns.Name = "cbbColumns";
             this.cbbColumns.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbbColumns.Size = new System.Drawing.Size(182, 26);
+            this.cbbColumns.Size = new System.Drawing.Size(182, 21);
             this.cbbColumns.TabIndex = 1;
             this.cbbColumns.TabStop = false;
             // 
@@ -481,7 +504,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Location = new System.Drawing.Point(106, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 18);
+            this.label1.Size = new System.Drawing.Size(76, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "تعداد ستون ها:";
             // 
@@ -544,37 +567,15 @@
             this.tabControl.TabIndex = 0;
             this.tabControl.TabStop = false;
             // 
-            // btnSubmitCols
-            // 
-            this.btnSubmitCols.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSubmitCols.Location = new System.Drawing.Point(63, 131);
-            this.btnSubmitCols.Name = "btnSubmitCols";
-            this.btnSubmitCols.Size = new System.Drawing.Size(75, 23);
-            this.btnSubmitCols.TabIndex = 2;
-            this.btnSubmitCols.Text = "تایید";
-            this.btnSubmitCols.UseVisualStyleBackColor = true;
-            this.btnSubmitCols.Click += new System.EventHandler(this.btnSubmitCols_Click);
-            // 
-            // btnSubmitRows
-            // 
-            this.btnSubmitRows.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSubmitRows.Location = new System.Drawing.Point(63, 131);
-            this.btnSubmitRows.Name = "btnSubmitRows";
-            this.btnSubmitRows.Size = new System.Drawing.Size(75, 23);
-            this.btnSubmitRows.TabIndex = 3;
-            this.btnSubmitRows.Text = "تایید";
-            this.btnSubmitRows.UseVisualStyleBackColor = true;
-            this.btnSubmitRows.Click += new System.EventHandler(this.btnSubmitRows_Click);
-            // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1002, 680);
             this.Controls.Add(this.tabControl);
-            this.Font = new System.Drawing.Font("Vazir FD-WOL", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(1002, 680);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
