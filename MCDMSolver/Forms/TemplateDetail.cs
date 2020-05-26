@@ -29,7 +29,8 @@ namespace MCDMSolver.Forms
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            
+            Classes.MainFormCaller.mainFormCallerVortex.openChildForm(new Forms.MainAlgorithm());
+            this.Close();
         }
     }
 }

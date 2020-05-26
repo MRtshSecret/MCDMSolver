@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,6 +23,12 @@ namespace MCDMSolver.Forms
             //btnDashboard.btnText = "داشبورد";
             //btnNew.btnText = "جدید";
             //btnLoad.btnText = "بارگزاری";
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            labelAccountName.Text = Classes.User.fullname;
+            Classes.MainFormCaller.mainFormCallerVortex = this;
         }
 
         #region Move Window
@@ -89,5 +96,6 @@ namespace MCDMSolver.Forms
             this.WindowState = FormWindowState.Minimized;
 
         }
+
     }
 }

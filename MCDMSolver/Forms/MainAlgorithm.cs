@@ -34,5 +34,10 @@ namespace MCDMSolver.Forms
             }
         }
         #endregion
+
+        private void iconHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

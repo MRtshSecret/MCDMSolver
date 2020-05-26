@@ -43,7 +43,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnMinimize = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Label();
-            this.btnAccountName = new System.Windows.Forms.Label();
+            this.labelAccountName = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel200.SuspendLayout();
@@ -121,18 +121,18 @@
             this.panel1.Controls.Add(this.btnAccountManager);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 595);
+            this.panel1.Location = new System.Drawing.Point(0, 628);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(98, 146);
+            this.panel1.Size = new System.Drawing.Size(98, 113);
             this.panel1.TabIndex = 6;
             // 
             // btnAccountManager
             // 
             this.btnAccountManager.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAccountManager.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnAccountManager.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAccountManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccountManager.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAccountManager.Location = new System.Drawing.Point(0, 36);
+            this.btnAccountManager.ForeColor = System.Drawing.Color.White;
+            this.btnAccountManager.Location = new System.Drawing.Point(0, 0);
             this.btnAccountManager.Name = "btnAccountManager";
             this.btnAccountManager.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnAccountManager.Size = new System.Drawing.Size(98, 55);
@@ -146,8 +146,8 @@
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnExit.Location = new System.Drawing.Point(0, 91);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(0, 58);
             this.btnExit.Name = "btnExit";
             this.btnExit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnExit.Size = new System.Drawing.Size(98, 55);
@@ -179,6 +179,7 @@
             // panelChildForm
             // 
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.ForeColor = System.Drawing.Color.White;
             this.panelChildForm.Location = new System.Drawing.Point(0, 25);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(924, 741);
@@ -205,7 +206,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.Controls.Add(this.btnMinimize, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnClose, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnAccountName, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.labelAccountName, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -245,19 +246,19 @@
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnClose.Click += new System.EventHandler(this.BtnExit_Click);
             // 
-            // btnAccountName
+            // labelAccountName
             // 
-            this.btnAccountName.AutoSize = true;
-            this.btnAccountName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAccountName.Font = new System.Drawing.Font("A Iranian Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnAccountName.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAccountName.Location = new System.Drawing.Point(765, 0);
-            this.btnAccountName.Name = "btnAccountName";
-            this.btnAccountName.Size = new System.Drawing.Size(184, 24);
-            this.btnAccountName.TabIndex = 4;
-            this.btnAccountName.Text = "مرتضی هوشنگ منش";
-            this.btnAccountName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAccountName.UseCompatibleTextRendering = true;
+            this.labelAccountName.AutoSize = true;
+            this.labelAccountName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelAccountName.Font = new System.Drawing.Font("A Iranian Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelAccountName.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelAccountName.Location = new System.Drawing.Point(765, 0);
+            this.labelAccountName.Name = "labelAccountName";
+            this.labelAccountName.Size = new System.Drawing.Size(184, 24);
+            this.labelAccountName.TabIndex = 4;
+            this.labelAccountName.Text = "مرتضی هوشنگ منش";
+            this.labelAccountName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelAccountName.UseCompatibleTextRendering = true;
             // 
             // MainForm
             // 
@@ -269,6 +270,7 @@
             this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel200.ResumeLayout(false);
@@ -284,16 +286,16 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panel200;
-        private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Button btnAccountManager;
         private System.Windows.Forms.Panel panelToolbar;
         private System.Windows.Forms.Label btnMinimize;
         private System.Windows.Forms.Label btnClose;
-        private System.Windows.Forms.Label btnAccountName;
+        private System.Windows.Forms.Label labelAccountName;
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Panel panelChildForm;
     }
 }

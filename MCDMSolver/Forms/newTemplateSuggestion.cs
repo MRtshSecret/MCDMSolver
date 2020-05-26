@@ -22,7 +22,7 @@ namespace MCDMSolver.Forms
 
         private void NewTemplateSuggestion_Load(object sender, EventArgs e)
         {
-            for(int i = 0; i < 40; i++)
+            for(int i = 0; i < 2; i++)
             {
                 flowLayoutPanel1.Controls.Add(new UserControls.Templates());
             }

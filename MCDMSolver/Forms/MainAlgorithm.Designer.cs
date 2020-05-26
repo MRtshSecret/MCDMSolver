@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainAlgorithm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.toolbarPanel = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -40,9 +43,6 @@
             this.labelHistory = new System.Windows.Forms.Label();
             this.iconHistory = new System.Windows.Forms.PictureBox();
             this.pnlPluginLoader = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.toolbarPanel.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -82,6 +82,38 @@
             this.toolbarPanel.Padding = new System.Windows.Forms.Padding(10, 10, 0, 0);
             this.toolbarPanel.Size = new System.Drawing.Size(1002, 76);
             this.toolbarPanel.TabIndex = 0;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Location = new System.Drawing.Point(832, 49);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(88, 18);
+            this.textBox3.TabIndex = 6;
+            this.textBox3.Text = "1396/11/2";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(673, 13);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(247, 18);
+            this.textBox2.TabIndex = 5;
+            this.textBox2.Text = "فایل شماره یک";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(386, 28);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(258, 18);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "SAW";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -134,6 +166,7 @@
             this.iconHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconHome.TabIndex = 0;
             this.iconHome.TabStop = false;
+            this.iconHome.Click += new System.EventHandler(this.iconHome_Click);
             // 
             // labelHome
             // 
@@ -145,6 +178,7 @@
             this.labelHome.TabIndex = 1;
             this.labelHome.Text = "خانه";
             this.labelHome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelHome.Click += new System.EventHandler(this.iconHome_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -190,38 +224,6 @@
             this.pnlPluginLoader.Name = "pnlPluginLoader";
             this.pnlPluginLoader.Size = new System.Drawing.Size(1002, 680);
             this.pnlPluginLoader.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(386, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 18);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "SAW";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(673, 13);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(247, 18);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.Text = "فایل شماره یک";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(832, 49);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(88, 18);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.Text = "1396/11/2";
             // 
             // MainAlgorithm
             // 

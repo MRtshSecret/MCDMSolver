@@ -41,5 +41,10 @@ namespace MCDMSolver.Forms
         {
             this.Close();
         }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

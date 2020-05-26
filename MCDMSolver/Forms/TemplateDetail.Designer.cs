@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TemplateDetail));
             this.panelMain = new System.Windows.Forms.Panel();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.picBoxTemplateDetail = new System.Windows.Forms.PictureBox();
             this.picboxNext = new System.Windows.Forms.PictureBox();
             this.picboxPrevious = new System.Windows.Forms.PictureBox();
-            this.btnCreate = new System.Windows.Forms.Button();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTemplateDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxNext)).BeginInit();
@@ -64,25 +64,39 @@
             this.panelMain.Size = new System.Drawing.Size(597, 293);
             this.panelMain.TabIndex = 0;
             // 
+            // btnCreate
+            // 
+            this.btnCreate.BackColor = System.Drawing.Color.Silver;
+            this.btnCreate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCreate.Image = ((System.Drawing.Image)(resources.GetObject("btnCreate.Image")));
+            this.btnCreate.Location = new System.Drawing.Point(246, 175);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(69, 58);
+            this.btnCreate.TabIndex = 10;
+            this.btnCreate.Text = "انتخاب";
+            this.btnCreate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCreate.UseVisualStyleBackColor = false;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(150, 101);
+            this.label3.Location = new System.Drawing.Point(102, 101);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(168, 99);
+            this.label3.Size = new System.Drawing.Size(216, 71);
             this.label3.TabIndex = 9;
-            this.label3.Text = "متن توضیحات مثلا هاشم از اقلیم های شمال کشور مهاحرت کرده اومده اینور و این داستان" +
-    "ا";
+            this.label3.Text = "متن کوتاه سه خطی که جزئیات یک الگوریتم را توضیح میدهد";
             // 
             // linkLabel1
             // 
-            this.linkLabel1.Location = new System.Drawing.Point(150, 79);
+            this.linkLabel1.Location = new System.Drawing.Point(61, 79);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.linkLabel1.Size = new System.Drawing.Size(91, 22);
+            this.linkLabel1.Size = new System.Drawing.Size(189, 22);
             this.linkLabel1.TabIndex = 8;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "هاشم دو برره";
+            this.linkLabel1.Text = "توسعه سیستم هوشمند پاندا";
             // 
             // label2
             // 
@@ -127,6 +141,7 @@
             // 
             // picboxNext
             // 
+            this.picboxNext.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picboxNext.Image = ((System.Drawing.Image)(resources.GetObject("picboxNext.Image")));
             this.picboxNext.Location = new System.Drawing.Point(11, 123);
             this.picboxNext.Name = "picboxNext";
@@ -138,6 +153,7 @@
             // picboxPrevious
             // 
             this.picboxPrevious.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picboxPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picboxPrevious.Image = ((System.Drawing.Image)(resources.GetObject("picboxPrevious.Image")));
             this.picboxPrevious.Location = new System.Drawing.Point(544, 123);
             this.picboxPrevious.Name = "picboxPrevious";
@@ -145,20 +161,6 @@
             this.picboxPrevious.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxPrevious.TabIndex = 0;
             this.picboxPrevious.TabStop = false;
-            // 
-            // btnCreate
-            // 
-            this.btnCreate.BackColor = System.Drawing.Color.Silver;
-            this.btnCreate.Image = ((System.Drawing.Image)(resources.GetObject("btnCreate.Image")));
-            this.btnCreate.Location = new System.Drawing.Point(246, 175);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(69, 58);
-            this.btnCreate.TabIndex = 10;
-            this.btnCreate.Text = "انتخاب";
-            this.btnCreate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnCreate.UseVisualStyleBackColor = false;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // TemplateDetail
             // 

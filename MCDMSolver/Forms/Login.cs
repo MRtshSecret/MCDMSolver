@@ -19,8 +19,7 @@ namespace MCDMSolver.Forms
 
         private void Login_Load(object sender, EventArgs e)
         {
-            int x = (panelTop.Size.Width - labelLogin.Size.Width) / 2;
-            labelLogin.Location = new Point(x, labelLogin.Location.Y);
+
         }
 
         #region Move Window
@@ -52,6 +51,13 @@ namespace MCDMSolver.Forms
         private void BtnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            //gets username from api and do stuff but for deafult we're doing with 1
+            Classes.User.username = "1";
+            Classes.User.fullname = "آقای شماره یک";
         }
     }
 }

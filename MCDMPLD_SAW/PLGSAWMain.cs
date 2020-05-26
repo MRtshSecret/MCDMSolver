@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace MCDMPLD_SAW
 {
-    public partial class MainForm : Form
+    public partial class PLGSAWMain : Form
     {
         List<reporter> reports = new List<reporter>();
         int Columns, Rows;
@@ -21,7 +21,7 @@ namespace MCDMPLD_SAW
         List<decimal> inputSign = new List<decimal>();
         List<double> inputWeight = new List<double>();
         public string foldername = "";
-        public MainForm()
+        public PLGSAWMain()
         {
             InitializeComponent();
         }

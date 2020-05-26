@@ -19,8 +19,7 @@ namespace MCDMSolver.Forms
 
         private void SignUp_Load(object sender, EventArgs e)
         {
-            int x = (panelTop.Size.Width - labelSignUp.Size.Width) / 2;
-            labelSignUp.Location = new Point(x, labelSignUp.Location.Y);
+           
         }
 
         #region Move Window
