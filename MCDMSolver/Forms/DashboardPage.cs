@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MCDMPLD_SAW;
+using MCDMPLD_Topsis;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,6 +49,26 @@ namespace MCDMSolver.Forms
         {
             Button btn = (Button)sender;
             btn.Font = new Font("Vazir FD-WOL", 8.25f);
+        }
+
+        private void BtnRecently01_Click(object sender, EventArgs e)
+        {
+            MainAlgorithm mAlgorithm = new MainAlgorithm("SAW");
+            Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex = mAlgorithm;
+            Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex.openChildForm(new PLGSAWMain());
+            Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex.Show();
+            this.Close();
+            Classes.MainFormCaller.mainFormCallerVortex.Hide();
+        }
+
+        private void BtnRecently02_Click(object sender, EventArgs e)
+        {
+            MainAlgorithm mAlgorithm = new MainAlgorithm("Topsis");
+            Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex = mAlgorithm;
+            Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex.openChildForm(new PLGTOPSOSMain());
+            Classes.MainAlgorithmCaller.mainAlgorithmCallerVortex.Show();
+            this.Close();
+            Classes.MainFormCaller.mainFormCallerVortex.Hide();
         }
     }
 }

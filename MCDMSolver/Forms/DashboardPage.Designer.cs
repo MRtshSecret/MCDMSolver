@@ -66,6 +66,7 @@
             this.btnRecently01.TabIndex = 6;
             this.btnRecently01.Text = "الگوریتم SAW";
             this.btnRecently01.UseVisualStyleBackColor = false;
+            this.btnRecently01.Click += new System.EventHandler(this.BtnRecently01_Click);
             this.btnRecently01.MouseEnter += new System.EventHandler(this.btnRecently_MouseEnter);
             this.btnRecently01.MouseLeave += new System.EventHandler(this.btnRecently_MouseLeave);
             // 
@@ -82,6 +83,7 @@
             this.btnRecently02.TabIndex = 7;
             this.btnRecently02.Text = "الگوریتم Topsis";
             this.btnRecently02.UseVisualStyleBackColor = false;
+            this.btnRecently02.Click += new System.EventHandler(this.BtnRecently02_Click);
             this.btnRecently02.MouseEnter += new System.EventHandler(this.btnRecently_MouseEnter);
             this.btnRecently02.MouseLeave += new System.EventHandler(this.btnRecently_MouseLeave);
             // 

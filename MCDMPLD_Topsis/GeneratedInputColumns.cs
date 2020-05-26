@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MCDMPLD_SAW
+namespace MCDMPLD_Topsis
 {
     public partial class GeneratedInputColumns : UserControl
     {
