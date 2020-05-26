@@ -44,11 +44,11 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnPreviousStep3 = new System.Windows.Forms.Button();
-            this.dataGridViewStep3 = new System.Windows.Forms.DataGridView();
             this.btnNextStep3 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSubmitRows = new System.Windows.Forms.Button();
             this.cbbRows = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -57,14 +57,14 @@
             this.Step1Page = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSubmitCols = new System.Windows.Forms.Button();
             this.cbbColumns = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnNextStep1 = new System.Windows.Forms.Button();
             this.panelGeneratedColItems = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl = new System.Windows.Forms.TabControl();
-            this.btnSubmitCols = new System.Windows.Forms.Button();
-            this.btnSubmitRows = new System.Windows.Forms.Button();
+            this.dataGridViewStep3 = new System.Windows.Forms.DataGridView();
             this.tabPage5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.panelMiddlePage5.SuspendLayout();
@@ -74,7 +74,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStep3)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -84,6 +83,7 @@
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStep3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage5
@@ -281,17 +281,6 @@
             this.btnPreviousStep3.UseVisualStyleBackColor = true;
             this.btnPreviousStep3.Click += new System.EventHandler(this.btnPreviousStep3_Click);
             // 
-            // dataGridViewStep3
-            // 
-            this.dataGridViewStep3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel4.SetColumnSpan(this.dataGridViewStep3, 3);
-            this.dataGridViewStep3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewStep3.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewStep3.Name = "dataGridViewStep3";
-            this.dataGridViewStep3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridViewStep3.Size = new System.Drawing.Size(982, 600);
-            this.dataGridViewStep3.TabIndex = 1;
-            // 
             // btnNextStep3
             // 
             this.btnNextStep3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -341,6 +330,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(191, 635);
             this.panel2.TabIndex = 2;
+            // 
+            // btnSubmitRows
+            // 
+            this.btnSubmitRows.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSubmitRows.Location = new System.Drawing.Point(63, 131);
+            this.btnSubmitRows.Name = "btnSubmitRows";
+            this.btnSubmitRows.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmitRows.TabIndex = 3;
+            this.btnSubmitRows.Text = "تایید";
+            this.btnSubmitRows.UseVisualStyleBackColor = true;
+            this.btnSubmitRows.Click += new System.EventHandler(this.btnSubmitRows_Click);
             // 
             // cbbRows
             // 
@@ -452,6 +452,17 @@
             this.panel1.Size = new System.Drawing.Size(191, 635);
             this.panel1.TabIndex = 0;
             // 
+            // btnSubmitCols
+            // 
+            this.btnSubmitCols.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSubmitCols.Location = new System.Drawing.Point(63, 131);
+            this.btnSubmitCols.Name = "btnSubmitCols";
+            this.btnSubmitCols.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmitCols.TabIndex = 2;
+            this.btnSubmitCols.Text = "تایید";
+            this.btnSubmitCols.UseVisualStyleBackColor = true;
+            this.btnSubmitCols.Click += new System.EventHandler(this.btnSubmitCols_Click);
+            // 
             // cbbColumns
             // 
             this.cbbColumns.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -544,27 +555,16 @@
             this.tabControl.TabIndex = 0;
             this.tabControl.TabStop = false;
             // 
-            // btnSubmitCols
+            // dataGridViewStep3
             // 
-            this.btnSubmitCols.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSubmitCols.Location = new System.Drawing.Point(63, 131);
-            this.btnSubmitCols.Name = "btnSubmitCols";
-            this.btnSubmitCols.Size = new System.Drawing.Size(75, 23);
-            this.btnSubmitCols.TabIndex = 2;
-            this.btnSubmitCols.Text = "تایید";
-            this.btnSubmitCols.UseVisualStyleBackColor = true;
-            this.btnSubmitCols.Click += new System.EventHandler(this.btnSubmitCols_Click);
-            // 
-            // btnSubmitRows
-            // 
-            this.btnSubmitRows.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSubmitRows.Location = new System.Drawing.Point(63, 131);
-            this.btnSubmitRows.Name = "btnSubmitRows";
-            this.btnSubmitRows.Size = new System.Drawing.Size(75, 23);
-            this.btnSubmitRows.TabIndex = 3;
-            this.btnSubmitRows.Text = "تایید";
-            this.btnSubmitRows.UseVisualStyleBackColor = true;
-            this.btnSubmitRows.Click += new System.EventHandler(this.btnSubmitRows_Click);
+            this.dataGridViewStep3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel4.SetColumnSpan(this.dataGridViewStep3, 3);
+            this.dataGridViewStep3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewStep3.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewStep3.Name = "dataGridViewStep3";
+            this.dataGridViewStep3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridViewStep3.Size = new System.Drawing.Size(982, 600);
+            this.dataGridViewStep3.TabIndex = 1;
             // 
             // Form1
             // 
@@ -588,7 +588,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStep3)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -600,6 +599,7 @@
             this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStep3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -622,7 +622,6 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Button btnPreviousStep3;
-        private System.Windows.Forms.DataGridView dataGridViewStep3;
         private System.Windows.Forms.Button btnNextStep3;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
@@ -643,6 +642,7 @@
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.Button btnSubmitCols;
         private System.Windows.Forms.Button btnSubmitRows;
+        private System.Windows.Forms.DataGridView dataGridViewStep3;
     }
 }
 
